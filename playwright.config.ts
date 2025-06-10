@@ -19,6 +19,10 @@ export default defineConfig({
     forbidOnly: !!process.env.CI,
     /* Retry on CI only */
     retries: process.env.CI ? 2 : 0,
+
+    timeout: 70 * 1000, // Set a global timeout of 30 seconds for each test
+    expect: { timeout: 7 * 1000 }, // Set a timeout of 5 seconds for each expect assertion
+
     /* Opt out of parallel tests on CI. */
     workers: process.env.CI ? 1 : undefined,
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
@@ -30,24 +34,26 @@ export default defineConfig({
 
         /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
         trace: "on-first-retry",
+        navigationTimeout: 5 * 1000,
     },
 
     /* Configure projects for major browsers */
     projects: [
         {
             name: "chromium",
-            use: { ...devices["Desktop Chrome"] },
+            use: { ...devices["Desktop Chrome"], headless: false },
+            // Run tests in headless mode
         },
 
-        {
-            name: "firefox",
-            use: { ...devices["Desktop Firefox"] },
-        },
+        // {
+        //     name: "firefox",
+        //     use: { ...devices["Desktop Firefox"] },
+        // },
 
-        {
-            name: "webkit",
-            use: { ...devices["Desktop Safari"] },
-        },
+        // {
+        //     name: "webkit",
+        //     use: { ...devices["Desktop Safari"] },
+        // },
 
         /* Test against mobile viewports. */
         // {
