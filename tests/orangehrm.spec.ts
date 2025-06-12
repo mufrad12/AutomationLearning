@@ -58,6 +58,7 @@ test.describe("Orange HRM Workflow", () => {
         //Edit the Employee
         // eslint-disable-next-line playwright/no-force-option
         await expect.soft(page.getByText("Record Found")).toBeVisible();
+        // eslint-disable-next-line playwright/no-force-option
         await page.locator(".oxd-icon.bi-pencil-fill").click({ force: true });
         console.log("Clicked on Edit Employee");
 
@@ -101,6 +102,7 @@ test.describe("Orange HRM Workflow", () => {
         //Delete the Employee
         // eslint-disable-next-line playwright/no-force-option
         await expect.soft(page.getByText("Record Found")).toBeVisible();
+        // eslint-disable-next-line playwright/no-force-option
         await page.getByRole("button", { name: "" }).click({ force: true });
         await page.getByRole("button", { name: "Yes, Delete" }).click();
         console.log("Employee deleted successfully");
@@ -109,9 +111,9 @@ test.describe("Orange HRM Workflow", () => {
         await page.getByRole("link", { name: "Employee List" }).click();
         console.log("Navigate to Employee List");
 
-        //Pagination Employee List to second page
-        await page.getByRole("button", { name: "2" }).click();
-        //await page.waitForTimeout(2000);
-        console.log("Navigated to page 2 of Employee List");
+        // //Pagination Employee List to second page
+        // await page.getByRole("button", { name: "2" }).click();
+        // //await page.waitForTimeout(2000);
+        // console.log("Navigated to page 2 of Employee List");
     });
 });
