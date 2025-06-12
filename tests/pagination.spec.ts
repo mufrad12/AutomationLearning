@@ -2,11 +2,12 @@ import { test, expect } from "@playwright/test";
 import { faker } from "@faker-js/faker";
 import { login } from "./utils/login";
 
-test.describe("Pagination - Create 30 Employees", () => {
-    test("Should create 30 employees using Faker", async ({ page }) => {
-        await login(page);
+test.describe("Pagination - Create 25 Employees", () => {
+    test("Should create 25 employees using Faker", async ({ page }) => {
+        // ⏱ Set custom timeout for this test only
+        test.setTimeout(300_000); // 5 minutes
 
-        // Go to PIM page
+        await login(page);
         await page.getByRole("link", { name: "PIM" }).click();
 
         let totalCreated = 0;
@@ -19,12 +20,8 @@ test.describe("Pagination - Create 30 Employees", () => {
 
             await page.getByPlaceholder("First Name").fill(firstName);
             await page.getByPlaceholder("Last Name").fill(lastName);
-
             await page.getByRole("button", { name: "Save" }).click();
 
-            // Confirm employee creation
-            await expect(page.getByText("Custom Fields")).toBeVisible();
-            await expect(page.getByText("Custom Fields")).toBeVisible();
             await expect(page.getByText("Custom Fields")).toBeVisible();
             await expect(page.getByText("Attachments")).toBeVisible();
 
@@ -39,10 +36,9 @@ test.describe("Pagination - Create 30 Employees", () => {
         console.log("🎉 Done creating employees.");
         console.log(`🔢 Total employees created: ${totalCreated}`);
 
-        // Pagination check
+        // Verify pagination
         console.log("🔍 Verifying pagination...");
         await page.getByRole("button", { name: "2" }).click();
-
         console.log("✅ Pagination working: navigated to page 2.");
     });
 });

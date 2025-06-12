@@ -20,8 +20,8 @@ export default defineConfig({
     /* Retry on CI only */
     retries: process.env.CI ? 2 : 0,
 
-    timeout: 250 * 1000, // Set a global timeout of 30 seconds for each test
-    expect: { timeout: 50 * 1000 }, // Set a timeout of 5 seconds for each expect assertion
+    timeout: 10 * 1000, // Set a global timeout of 30 seconds for each test
+    expect: { timeout: 10 * 1000 }, // Set a timeout of 5 seconds for each expect assertion
 
     /* Opt out of parallel tests on CI. */
     workers: process.env.CI ? 1 : undefined,
@@ -43,7 +43,7 @@ export default defineConfig({
 
         /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
         trace: "on-first-retry",
-        navigationTimeout: 35 * 1000,
+        navigationTimeout: 10 * 1000,
     },
 
     /* Configure projects for major browsers */
