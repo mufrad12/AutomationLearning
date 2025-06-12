@@ -53,6 +53,7 @@ test("Orange HRM", async ({ page }) => {
 
     //Edit the Employee
     // eslint-disable-next-line playwright/no-force-option
+    await expect.soft(page.getByText("Record Found")).toBeVisible();
     await page.locator(".oxd-icon.bi-pencil-fill").click({ force: true });
     console.log("Clicked on Edit Employee");
 
