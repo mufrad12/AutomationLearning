@@ -1,4 +1,4 @@
-import { test } from "playwright/test";
+import { expect, test } from "playwright/test";
 
 // eslint-disable-next-line playwright/require-top-level-describe
 test("Orange HRM", async ({ page }) => {
@@ -33,7 +33,11 @@ test("Orange HRM", async ({ page }) => {
     // Click the save button to create the employee
     await page.getByRole("button", { name: "Save" }).click();
     console.log("Employee creation saved");
-    await page.waitForTimeout(4000);
+    await expect
+        .soft(page.getByText("Personal DetailsEmployee Full"))
+        .toBeVisible();
+
+    //await page.waitForTimeout(4000);
 
     // --------- Search Employee ---------
     await page.getByRole("link", { name: "Employee List" }).click();
@@ -41,8 +45,10 @@ test("Orange HRM", async ({ page }) => {
 
     // Fill the Employee ID in the search field
     await page.getByRole("textbox").nth(2).fill(employeeId);
+    await expect.soft(page.getByText("Employee Id")).toBeVisible();
     await page.getByRole("button", { name: "Search" }).click();
-    await page.waitForTimeout(2000);
+
+    // await page.waitForTimeout(2000);
     console.log(`Searched for Employee ID: ${employeeId}`);
 
     //Edit the Employee
@@ -52,6 +58,7 @@ test("Orange HRM", async ({ page }) => {
 
     //await page.pause();
     //Check the employee edit page by checking the heading
+    // eslint-disable-next-line playwright/no-useless-await
     await page.getByRole("heading", { name: "Personal Details" });
     console.log("Employee Edit Page");
 
@@ -80,9 +87,9 @@ test("Orange HRM", async ({ page }) => {
         .getByPlaceholder("Type for hints...")
         .first()
         .fill("Ratul Bossss");
-    await page.waitForTimeout(4000);
+    //await page.waitForTimeout(4000);
     await page.getByRole("button", { name: "Search" }).click();
-    await page.waitForTimeout(4000);
+    //await page.waitForTimeout(4000);
     console.log(`Searched for Employee ID: ${employeeId}`);
 
     //Delete the Employee
@@ -97,6 +104,6 @@ test("Orange HRM", async ({ page }) => {
 
     //Pagination Employee List to second page
     await page.getByRole("button", { name: "2" }).click();
-    await page.waitForTimeout(2000);
+    //await page.waitForTimeout(2000);
     console.log("Navigated to page 2 of Employee List");
 });
