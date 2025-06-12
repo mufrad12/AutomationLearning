@@ -6,7 +6,7 @@ import { login } from "./utils/login";
 const filePath = path.join(__dirname, "employee.json");
 
 test.describe("Delete Employee", () => {
-    test("should delete employee using saved ID and clear the file", async ({
+    test("Should delete employee using saved ID and clear the file", async ({
         page,
     }) => {
         await login(page);

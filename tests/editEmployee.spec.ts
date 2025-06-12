@@ -4,7 +4,7 @@ import path from "path";
 import { login } from "./utils/login";
 
 test.describe("Edit Employee", () => {
-    test("should edit the employee using saved ID", async ({ page }) => {
+    test("Should edit the employee using saved ID", async ({ page }) => {
         await login(page);
 
         const filePath = path.join(__dirname, "employee.json");

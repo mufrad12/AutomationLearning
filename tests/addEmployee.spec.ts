@@ -4,7 +4,7 @@ import path from "path";
 import { login } from "./utils/login";
 
 test.describe("Add Employee", () => {
-    test("should add employee and save ID", async ({ page }) => {
+    test("Should add employee and save ID", async ({ page }) => {
         await login(page);
 
         await page.getByRole("link", { name: "PIM" }).click();
