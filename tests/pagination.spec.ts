@@ -22,7 +22,9 @@ test.describe("Pagination - Create 25 Employees", () => {
             await page.getByPlaceholder("Last Name").fill(lastName);
             await page.getByRole("button", { name: "Save" }).click();
 
+            // eslint-disable-next-line playwright/require-soft-assertions
             await expect(page.getByText("Custom Fields")).toBeVisible();
+            // eslint-disable-next-line playwright/require-soft-assertions
             await expect(page.getByText("Attachments")).toBeVisible();
 
             totalCreated++;

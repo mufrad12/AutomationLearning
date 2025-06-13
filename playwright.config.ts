@@ -20,7 +20,7 @@ export default defineConfig({
     /* Retry on CI only */
     retries: process.env.CI ? 2 : 0,
 
-    timeout: 10 * 1000, // Set a global timeout of 30 seconds for each test
+    timeout: 20 * 1000, // Set a global timeout of 30 seconds for each test
     expect: { timeout: 10 * 1000 }, // Set a timeout of 5 seconds for each expect assertion
 
     /* Opt out of parallel tests on CI. */

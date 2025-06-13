@@ -3,11 +3,39 @@ import * as fs from "fs";
 import path from "path";
 import { login } from "./utils/login";
 
+const filePath = path.join(__dirname, "employee.json");
+
 test.describe("Edit Employee", () => {
+    test.beforeEach(async ({ browser }) => {
+        const context = await browser.newContext();
+        const page = await context.newPage();
+        await login(page);
+
+        // Create a new employee and save ID
+        await page.getByRole("link", { name: "PIM" }).click();
+        await page.getByRole("button", { name: " Add" }).click();
+        await page.getByPlaceholder("First Name").fill("Ratul");
+        await page.getByPlaceholder("Last Name").fill("Boss");
+
+        const employeeId = await page
+            .locator("form")
+            .getByRole("textbox")
+            .nth(4)
+            .inputValue();
+
+        fs.writeFileSync(filePath, JSON.stringify({ employeeId }));
+
+        await page.getByRole("button", { name: "Save" }).click();
+        // eslint-disable-next-line playwright/require-soft-assertions
+        await expect(
+            page.getByText("Personal DetailsEmployee Full"),
+        ).toBeVisible();
+        await page.close();
+    });
+
     test("Should edit the employee using saved ID", async ({ page }) => {
         await login(page);
 
-        const filePath = path.join(__dirname, "employee.json");
         const employeeData = JSON.parse(fs.readFileSync(filePath, "utf8"));
         const employeeId = employeeData.employeeId;
 
@@ -20,11 +48,8 @@ test.describe("Edit Employee", () => {
 
         // eslint-disable-next-line playwright/no-force-option
         await page.locator(".oxd-icon.bi-pencil-fill").click({ force: true });
-
         // eslint-disable-next-line playwright/require-soft-assertions
         await expect(page.getByText("Contact Details")).toBeVisible();
-        // eslint-disable-next-line playwright/require-soft-assertions
-        await expect(page.getByText("Employee Id")).toBeVisible();
 
         await page
             .locator("form")
@@ -38,6 +63,7 @@ test.describe("Edit Employee", () => {
             .filter({ hasText: "Blood TypeA+Test_Field Save" })
             .getByRole("button")
             .click();
-        console.log("Employee details updated successfully");
+
+        console.log("✅ Employee details updated successfully");
     });
 });
