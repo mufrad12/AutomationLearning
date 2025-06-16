@@ -3,7 +3,7 @@ import * as fs from "fs";
 import path from "path";
 import { login } from "./utils/login";
 
-const filePath = path.join(__dirname, "employee.json");
+const editFilePath = path.join(__dirname, "edit_employee.json");
 
 test.describe("Edit Employee", () => {
     test.beforeEach(async ({ browser }) => {
@@ -23,7 +23,7 @@ test.describe("Edit Employee", () => {
             .nth(4)
             .inputValue();
 
-        fs.writeFileSync(filePath, JSON.stringify({ employeeId }));
+        fs.writeFileSync(editFilePath, JSON.stringify({ employeeId }));
 
         await page.getByRole("button", { name: "Save" }).click();
         // eslint-disable-next-line playwright/require-soft-assertions
@@ -36,7 +36,7 @@ test.describe("Edit Employee", () => {
     test("Should edit the employee using saved ID", async ({ page }) => {
         await login(page);
 
-        const employeeData = JSON.parse(fs.readFileSync(filePath, "utf8"));
+        const employeeData = JSON.parse(fs.readFileSync(editFilePath, "utf8"));
         const employeeId = employeeData.employeeId;
 
         await page.getByRole("link", { name: "PIM" }).click();
