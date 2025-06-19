@@ -5,7 +5,7 @@ import { login } from "./utils/login";
 test.describe("Pagination - Create 25 Employees", () => {
     test("Should create 25 employees using Faker", async ({ page }) => {
         // ⏱ Set custom timeout for this test only
-        test.setTimeout(300_000); // 5 minutes
+        //test.setTimeout(300_000); // 5 minutes
 
         await login(page);
         await page.getByRole("link", { name: "PIM" }).click();

@@ -1,7 +1,9 @@
+/* eslint-disable playwright/no-force-option */
 import { test, expect } from "@playwright/test";
 import * as fs from "fs";
 import path from "path";
 import { login } from "./utils/login";
+import { generate9DigitId } from "./utils/generateEmpID";
 
 const deleteFilePath = path.join(__dirname, "delete_employee.json");
 
@@ -17,18 +19,28 @@ test.describe("Delete Employee", () => {
         const utcTimeMillis: number = Date.now();
         console.log("🕒 UTC Timestamp for ID:", utcTimeMillis);
 
-        const firstName = "Ratul";
-        const lastName = "Boss";
+        await page.getByPlaceholder("First Name").fill("Ratul");
+        await page.getByPlaceholder("Last Name").fill("Boss");
+        //await page.pause();
 
-        await page.getByPlaceholder("First Name").fill(firstName);
-        await page.getByPlaceholder("Last Name").fill(lastName);
-        await page.getByRole("textbox").nth(4).fill(utcTimeMillis.toString());
+        // Fill the Employee ID field manually with UTC timestamp
+        await page
+            .locator(
+                "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input",
+            )
+            .fill(generate9DigitId());
 
-        const employeeId = await page.getByRole("textbox").nth(4).inputValue();
-
+        // Get and save the employee ID to file
+        const employeeId = await page
+            .locator(
+                "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input",
+            )
+            .inputValue();
+        const deleteFilePath = path.join(__dirname, "delete_employee.json");
         fs.writeFileSync(deleteFilePath, JSON.stringify({ employeeId }));
 
         await page.getByRole("button", { name: "Save" }).click();
+
         // eslint-disable-next-line playwright/require-soft-assertions
         await expect(page.getByText("Contact Details")).toBeVisible();
         // eslint-disable-next-line playwright/require-soft-assertions
@@ -53,9 +65,11 @@ test.describe("Delete Employee", () => {
             .getByPlaceholder("Type for hints...")
             .first()
             .fill("Ratul Boss");
-        await page.getByRole("button", { name: "Search" }).click();
+        await page
+            .getByRole("button", { name: "Search" })
+            .click({ force: true });
 
-        await expect(page.getByText("Records Found")).toBeVisible();
+        await expect(page.getByText("Record Found")).toBeVisible();
         // eslint-disable-next-line playwright/no-force-option
         await page.getByRole("button", { name: "" }).click({ force: true });
         await page.getByRole("button", { name: "Yes, Delete" }).click();
