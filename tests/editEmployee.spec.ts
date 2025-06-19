@@ -11,26 +11,22 @@ test.describe("Edit Employee", () => {
         const page = await context.newPage();
         await login(page);
 
-        // Create a new employee and save ID
         await page.getByRole("link", { name: "PIM" }).click();
         await page.getByRole("button", { name: " Add" }).click();
+
+        const utcTimeMillis: number = Date.now();
+        console.log("🕒 UTC Timestamp for ID:", utcTimeMillis);
+
         await page.getByPlaceholder("First Name").fill("Ratul");
         await page.getByPlaceholder("Last Name").fill("Boss");
+        await page.getByRole("textbox").nth(4).fill(utcTimeMillis.toString());
 
-        const employeeId = await page
-            .locator("form")
-            .getByRole("textbox")
-            .nth(4)
-            .inputValue();
-
+        const employeeId = await page.getByRole("textbox").nth(4).inputValue();
         fs.writeFileSync(editFilePath, JSON.stringify({ employeeId }));
 
         await page.getByRole("button", { name: "Save" }).click();
-        // eslint-disable-next-line playwright/require-soft-assertions
-        await expect(
-            page.getByText("Personal DetailsEmployee Full"),
-        ).toBeVisible();
-        await page.close();
+        await expect(page.getByText("Contact Details")).toBeVisible();
+        await expect(page.getByText("Employee Full Name")).toBeVisible();
     });
 
     test("Should edit the employee using saved ID", async ({ page }) => {
@@ -43,8 +39,9 @@ test.describe("Edit Employee", () => {
         await page.getByRole("link", { name: "Employee List" }).click();
         await page.getByRole("textbox").nth(2).fill(employeeId);
         await page.getByRole("button", { name: "Search" }).click();
+
         // eslint-disable-next-line playwright/require-soft-assertions
-        await expect(page.getByText("Record Found")).toBeVisible();
+        await expect(page.getByText("Records Found")).toBeVisible();
 
         // eslint-disable-next-line playwright/no-force-option
         await page.locator(".oxd-icon.bi-pencil-fill").click({ force: true });
@@ -64,6 +61,6 @@ test.describe("Edit Employee", () => {
             .getByRole("button")
             .click();
 
-        console.log("✅ Employee details updated successfully");
+        console.log(`✅ Employee with ID ${employeeId} updated successfully`);
     });
 });

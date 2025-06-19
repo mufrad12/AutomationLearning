@@ -9,23 +9,29 @@ test.describe("Add Employee", () => {
 
         await page.getByRole("link", { name: "PIM" }).click();
         await page.getByRole("button", { name: " Add" }).click();
+
+        const utcTimeMillis: number = Date.now();
+        console.log("🕒 UTC Timestamp:", utcTimeMillis);
+
         await page.getByPlaceholder("First Name").fill("Ratul");
         await page.getByPlaceholder("Last Name").fill("Boss");
 
-        const employeeId = await page
-            .locator("form")
-            .getByRole("textbox")
-            .nth(4)
-            .inputValue();
+        // Fill the Employee ID field manually with UTC timestamp
+        await page.getByRole("textbox").nth(4).fill(utcTimeMillis.toString());
 
-        // Save employee ID to file
-        const filePath = path.join(__dirname, "employee.json");
+        // Get and save the employee ID to file
+        const employeeId = await page.getByRole("textbox").nth(4).inputValue();
+        const filePath = path.join(__dirname, "create_employee.json");
         fs.writeFileSync(filePath, JSON.stringify({ employeeId }));
 
         await page.getByRole("button", { name: "Save" }).click();
+
         // eslint-disable-next-line playwright/require-soft-assertions
-        await expect(
-            page.getByText("Personal DetailsEmployee Full"),
-        ).toBeVisible();
+        await expect(page.getByText("Contact Details")).toBeVisible();
+        // eslint-disable-next-line playwright/require-soft-assertions
+        await expect(page.getByText("Employee Full Name")).toBeVisible();
+
+        //fs.writeFileSync(filePath, JSON.stringify({ employeeId: "" }));
+        //console.log("🧹 create_employee.json cleared.");
     });
 });

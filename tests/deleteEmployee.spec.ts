@@ -11,26 +11,28 @@ test.describe("Delete Employee", () => {
         const page = await context.newPage();
         await login(page);
 
-        // Create a new employee and save ID
         await page.getByRole("link", { name: "PIM" }).click();
         await page.getByRole("button", { name: " Add" }).click();
-        await page.getByPlaceholder("First Name").fill("Ratul");
-        await page.getByPlaceholder("Last Name").fill("Boss");
 
-        const employeeId = await page
-            .locator("form")
-            .getByRole("textbox")
-            .nth(4)
-            .inputValue();
+        const utcTimeMillis: number = Date.now();
+        console.log("🕒 UTC Timestamp for ID:", utcTimeMillis);
+
+        const firstName = "Ratul";
+        const lastName = "Boss";
+
+        await page.getByPlaceholder("First Name").fill(firstName);
+        await page.getByPlaceholder("Last Name").fill(lastName);
+        await page.getByRole("textbox").nth(4).fill(utcTimeMillis.toString());
+
+        const employeeId = await page.getByRole("textbox").nth(4).inputValue();
 
         fs.writeFileSync(deleteFilePath, JSON.stringify({ employeeId }));
 
         await page.getByRole("button", { name: "Save" }).click();
         // eslint-disable-next-line playwright/require-soft-assertions
-        await expect(
-            page.getByText("Personal DetailsEmployee Full"),
-        ).toBeVisible();
-        await page.close();
+        await expect(page.getByText("Contact Details")).toBeVisible();
+        // eslint-disable-next-line playwright/require-soft-assertions
+        await expect(page.getByText("Employee Full Name")).toBeVisible();
     });
 
     test("Should delete employee using saved ID and clear the file", async ({
@@ -53,8 +55,7 @@ test.describe("Delete Employee", () => {
             .fill("Ratul Boss");
         await page.getByRole("button", { name: "Search" }).click();
 
-        // eslint-disable-next-line playwright/require-soft-assertions
-        await expect(page.getByText("Record Found")).toBeVisible();
+        await expect(page.getByText("Records Found")).toBeVisible();
         // eslint-disable-next-line playwright/no-force-option
         await page.getByRole("button", { name: "" }).click({ force: true });
         await page.getByRole("button", { name: "Yes, Delete" }).click();
@@ -62,6 +63,6 @@ test.describe("Delete Employee", () => {
         console.log(`🗑️ Employee with ID ${employeeId} deleted.`);
 
         fs.writeFileSync(deleteFilePath, JSON.stringify({ employeeId: "" }));
-        console.log("🧹 employee.json cleared.");
+        console.log("🧹 delete_employee.json cleared.");
     });
 });
