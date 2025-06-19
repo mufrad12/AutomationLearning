@@ -3,7 +3,7 @@ import * as fs from "fs";
 import path from "path";
 import { login } from "./utils/login";
 
-const filePath = path.join(__dirname, "employee.json");
+const deleteFilePath = path.join(__dirname, "delete_employee.json");
 
 test.describe("Delete Employee", () => {
     test.beforeEach(async ({ browser }) => {
@@ -23,7 +23,7 @@ test.describe("Delete Employee", () => {
             .nth(4)
             .inputValue();
 
-        fs.writeFileSync(filePath, JSON.stringify({ employeeId }));
+        fs.writeFileSync(deleteFilePath, JSON.stringify({ employeeId }));
 
         await page.getByRole("button", { name: "Save" }).click();
         // eslint-disable-next-line playwright/require-soft-assertions
@@ -38,7 +38,9 @@ test.describe("Delete Employee", () => {
     }) => {
         await login(page);
 
-        const employeeData = JSON.parse(fs.readFileSync(filePath, "utf8"));
+        const employeeData = JSON.parse(
+            fs.readFileSync(deleteFilePath, "utf8"),
+        );
         const employeeId = employeeData.employeeId;
 
         await page.getByRole("link", { name: "PIM" }).click();
@@ -59,7 +61,7 @@ test.describe("Delete Employee", () => {
 
         console.log(`🗑️ Employee with ID ${employeeId} deleted.`);
 
-        fs.writeFileSync(filePath, JSON.stringify({ employeeId: "" }));
+        fs.writeFileSync(deleteFilePath, JSON.stringify({ employeeId: "" }));
         console.log("🧹 employee.json cleared.");
     });
 });
