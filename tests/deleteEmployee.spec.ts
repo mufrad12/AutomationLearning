@@ -19,8 +19,8 @@ test.describe("Delete Employee", () => {
         const utcTimeMillis: number = Date.now();
         console.log("🕒 UTC Timestamp for ID:", utcTimeMillis);
 
-        await page.getByPlaceholder("First Name").fill("Ratul");
-        await page.getByPlaceholder("Last Name").fill("Boss");
+        await page.getByPlaceholder("First Name").fill("Mike");
+        await page.getByPlaceholder("Last Name").fill("Ross");
         //await page.pause();
 
         // Fill the Employee ID field manually with UTC timestamp
@@ -64,7 +64,7 @@ test.describe("Delete Employee", () => {
         await page
             .getByPlaceholder("Type for hints...")
             .first()
-            .fill("Ratul Boss");
+            .fill("Mike Ross");
         await page
             .getByRole("button", { name: "Search" })
             .click({ force: true });

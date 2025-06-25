@@ -18,8 +18,8 @@ test.describe("Edit Employee", () => {
         const utcTimeMillis: number = Date.now();
         console.log("🕒 UTC Timestamp for ID:", utcTimeMillis);
 
-        await page.getByPlaceholder("First Name").fill("Ratul");
-        await page.getByPlaceholder("Last Name").fill("Boss");
+        await page.getByPlaceholder("First Name").fill("Mike");
+        await page.getByPlaceholder("Last Name").fill("Ross");
         //await page.pause();
 
         // Fill the Employee ID field manually with UTC timestamp
@@ -57,9 +57,11 @@ test.describe("Edit Employee", () => {
         await page.getByRole("textbox").nth(2).fill(employeeId);
         await page
             .getByRole("button", { name: "Search" })
+            // eslint-disable-next-line playwright/no-force-option
             .click({ force: true });
         await page
             .getByRole("button", { name: "Search" })
+            // eslint-disable-next-line playwright/no-force-option
             .click({ force: true });
 
         // eslint-disable-next-line playwright/require-soft-assertions
