@@ -1,14 +1,16 @@
 import { Page, expect } from "@playwright/test";
 import * as fs from "fs";
 import path from "path";
+import { faker } from "@faker-js/faker";
 import { generate9DigitId } from "./generateEmpID";
 
 export async function createEmployee(
     page: Page,
     jsonFilename: string,
-    firstName: string = "Mike",
-    lastName: string = "Ross",
 ): Promise<string> {
+    const firstName = faker.name.firstName();
+    const lastName = faker.name.lastName();
+
     await page.getByRole("link", { name: "PIM" }).click();
     await page.getByRole("button", { name: " Add" }).click();
 
@@ -33,10 +35,9 @@ export async function createEmployee(
     fs.writeFileSync(filePath, JSON.stringify({ employeeId }));
 
     await page.getByRole("button", { name: "Save" }).click();
-    // eslint-disable-next-line playwright/require-soft-assertions
     await expect(page.getByText("Contact Details")).toBeVisible();
-    // eslint-disable-next-line playwright/require-soft-assertions
     await expect(page.getByText("Employee Full Name")).toBeVisible();
 
+    console.log(`👤 Created: ${firstName} ${lastName} | ID: ${employeeId}`);
     return employeeId;
 }
