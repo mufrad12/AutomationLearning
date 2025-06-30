@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { faker } from "@faker-js/faker";
-import { login } from "./utils/login";
-import { generate9DigitId } from "./utils/generateEmpID";
+import { login } from "../utils/login";
+import { generate9DigitId } from "../utils/generateEmpID";
 
 test.describe("Pagination - Create 25 Employees", () => {
     test("Should create 5 employees using Faker and UTC-based ID", async ({

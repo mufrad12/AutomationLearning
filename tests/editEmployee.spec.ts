@@ -1,41 +1,35 @@
 import { test, expect } from "@playwright/test";
 import * as fs from "fs";
 import path from "path";
-import { login } from "./utils/login";
-import { createEmployee } from "./utils/createEmployee";
+import { login } from "../utils/login";
+import { createEmployee } from "../utils/createEmployee";
+import { searchEmployeeByIdAndEdit } from "../utils/searchEmployeeActions";
 
 const jsonFilename = "edit_employee.json";
-const filePath = path.join(__dirname, "data", jsonFilename);
+const editFilePath = path.resolve(process.cwd(), "tests", "data", jsonFilename);
 
 test.describe("Edit Employee", () => {
     test.beforeEach(async ({ browser }) => {
         const context = await browser.newContext();
         const page = await context.newPage();
         await login(page);
+        // Create a fresh employee and write to tests/data/edit_employee.json
         await createEmployee(page, jsonFilename);
     });
 
     test("Should edit the employee using saved ID", async ({ page }) => {
         await login(page);
-        const employeeId = JSON.parse(
-            fs.readFileSync(filePath, "utf8"),
-        ).employeeId;
 
-        await page.getByRole("link", { name: "PIM" }).click();
-        await page.getByRole("link", { name: "Employee List" }).click();
-        await page.getByRole("textbox").nth(2).fill(employeeId);
-        await page
-            .getByRole("button", { name: "Search" })
-            // eslint-disable-next-line playwright/no-force-option
-            .click({ force: true });
-        // eslint-disable-next-line playwright/require-soft-assertions
-        await expect(page.getByText("Record Found")).toBeVisible();
+        // Read the ID back from tests/data/edit_employee.json
+        const employeeData = JSON.parse(fs.readFileSync(editFilePath, "utf8"));
+        const employeeId = employeeData.employeeId;
 
-        // eslint-disable-next-line playwright/no-force-option
-        await page.locator(".oxd-icon.bi-pencil-fill").click({ force: true });
+        // Search + open edit
+        await searchEmployeeByIdAndEdit(page, employeeId);
+
+        // Perform the edit steps
         // eslint-disable-next-line playwright/require-soft-assertions
         await expect(page.getByText("Contact Details")).toBeVisible();
-
         await page
             .locator("form")
             .filter({ hasText: "Blood Type-- Select --" })
@@ -48,6 +42,6 @@ test.describe("Edit Employee", () => {
             .getByRole("button")
             .click();
 
-        console.log(`📝 Updated Employee ID: ${employeeId}`);
+        console.log(`✅ Employee with ID ${employeeId} updated successfully`);
     });
 });
