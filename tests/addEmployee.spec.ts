@@ -31,7 +31,7 @@ test.describe("Add Employee", () => {
                 "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input",
             )
             .inputValue();
-        const filePath = path.join(__dirname, "create_employee.json");
+        const filePath = path.join(__dirname, "data", "create_employee.json");
         fs.writeFileSync(filePath, JSON.stringify({ employeeId }));
 
         await page.getByRole("button", { name: "Save" }).click();

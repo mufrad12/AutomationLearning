@@ -5,7 +5,7 @@ import path from "path";
 import { login } from "./utils/login";
 import { generate9DigitId } from "./utils/generateEmpID";
 
-const deleteFilePath = path.join(__dirname, "delete_employee.json");
+const deleteFilePath = path.join(__dirname, "data", "delete_employee.json");
 
 test.describe("Delete Employee", () => {
     test.beforeEach(async ({ browser }) => {
@@ -36,7 +36,12 @@ test.describe("Delete Employee", () => {
                 "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input",
             )
             .inputValue();
-        const deleteFilePath = path.join(__dirname, "delete_employee.json");
+
+        const deleteFilePath = path.join(
+            __dirname,
+            "data",
+            "delete_employee.json",
+        );
         fs.writeFileSync(deleteFilePath, JSON.stringify({ employeeId }));
 
         await page.getByRole("button", { name: "Save" }).click();
@@ -69,6 +74,7 @@ test.describe("Delete Employee", () => {
             .getByRole("button", { name: "Search" })
             .click({ force: true });
 
+        // eslint-disable-next-line playwright/require-soft-assertions
         await expect(page.getByText("Record Found")).toBeVisible();
         // eslint-disable-next-line playwright/no-force-option
         await page.getByRole("button", { name: "" }).click({ force: true });

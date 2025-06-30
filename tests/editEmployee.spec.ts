@@ -4,7 +4,7 @@ import path from "path";
 import { login } from "./utils/login";
 import { generate9DigitId } from "./utils/generateEmpID";
 
-const editFilePath = path.join(__dirname, "edit_employee.json");
+const editFilePath = path.join(__dirname, "data", "edit_employee.json");
 
 test.describe("Edit Employee", () => {
     test.beforeEach(async ({ browser }) => {
@@ -35,7 +35,7 @@ test.describe("Edit Employee", () => {
                 "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input",
             )
             .inputValue();
-        const editFilePath = path.join(__dirname, "edit_employee.json");
+        const editFilePath = path.join(__dirname, "data", "edit_employee.json");
         fs.writeFileSync(editFilePath, JSON.stringify({ employeeId }));
 
         await page.getByRole("button", { name: "Save" }).click();
