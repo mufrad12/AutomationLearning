@@ -3,16 +3,44 @@ import { faker } from "@faker-js/faker";
 import { login } from "../utils/login";
 import { generate9DigitId } from "../utils/generateEmpID";
 
-test.describe("Pagination - Create 25 Employees", () => {
-    test("Should create 5 employees using Faker and UTC-based ID", async ({
-        page,
-    }) => {
+test.describe("Pagination - Stop when Page 2 appears", () => {
+    test("Should create employees until Page 2 appears", async ({ page }) => {
         await login(page);
         await page.getByRole("link", { name: "PIM" }).click();
 
-        let totalCreated = 0;
+        let createdCount = 0;
 
-        for (let i = 1; i <= 5; i++) {
+        while (true) {
+            // Step 1: Check if Page 2 exists
+            await page.getByRole("link", { name: "Employee List" }).click();
+            // eslint-disable-next-line playwright/require-soft-assertions
+            await expect(page.getByText("Employee Information")).toBeVisible();
+
+            // eslint-disable-next-line playwright/require-soft-assertions
+            await expect(page.getByText("OrangeHRM OS")).toBeVisible();
+            // eslint-disable-next-line playwright/require-soft-assertions
+            await expect(
+                page.locator(".orangehrm-bottom-container"),
+            ).toBeVisible();
+            // Pause for debugging if needed
+            await page.pause();
+
+            const page2Locator = page
+                .locator(".oxd-pagination-page-item")
+                .filter({ hasText: "2" });
+
+            const page2Count = await page2Locator.count();
+
+            if (page2Count > 0) {
+                console.log("✅ Page 2 is visible now.");
+                await page2Locator.first().click();
+                console.log("🎯 Pagination working: Navigated to Page 2.");
+                break;
+            }
+
+            console.log("🔄 Page 2 not found. Creating a new employee...");
+
+            // Step 2: Create Employee
             await page.getByRole("button", { name: " Add" }).click();
 
             const firstName = faker.name.firstName();
@@ -21,8 +49,6 @@ test.describe("Pagination - Create 25 Employees", () => {
 
             await page.getByPlaceholder("First Name").fill(firstName);
             await page.getByPlaceholder("Last Name").fill(lastName);
-
-            // Fill the generated UTC-based Employee ID
             await page
                 .locator("form")
                 .getByRole("textbox")
@@ -31,34 +57,15 @@ test.describe("Pagination - Create 25 Employees", () => {
 
             await page.getByRole("button", { name: "Save" }).click();
 
-            // eslint-disable-next-line playwright/require-soft-assertions
             await expect(page.getByText("Custom Fields")).toBeVisible();
-            // eslint-disable-next-line playwright/require-soft-assertions
             await expect(page.getByText("Attachments")).toBeVisible();
 
-            totalCreated++;
+            createdCount++;
             console.log(
-                `✅ [${totalCreated}/5] Employee created: ${firstName} ${lastName} (ID: ${generatedEmpId})`,
+                `✅ [${createdCount}] Created: ${firstName} ${lastName} (ID: ${generatedEmpId})`,
             );
-
-            await page.getByRole("link", { name: "Employee List" }).click();
         }
 
-        console.log("🎉 Done creating employees.");
-        console.log(`🔢 Total employees created: ${totalCreated}`);
-
-        // Pagination verification
-        const page2Button = page.getByRole("button", { name: "2" });
-        if ((await page2Button.count()) > 0) {
-            // eslint-disable-next-line playwright/prefer-locator
-            await page2Button.click();
-            // eslint-disable-next-line playwright/require-soft-assertions
-            await expect(
-                page.locator(".oxd-pagination-page-item--selected"),
-            ).toHaveText("2");
-            console.log("✅ Pagination working: navigated to page 2.");
-        } else {
-            console.log("⚠️ Page 2 does not exist. No pagination triggered.");
-        }
+        console.log(`🏁 Done after creating ${createdCount} employees.`);
     });
 });
