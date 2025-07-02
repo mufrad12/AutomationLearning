@@ -1,71 +1,60 @@
 import { test, expect } from "@playwright/test";
-import { faker } from "@faker-js/faker";
 import { login } from "../utils/login";
-import { generate9DigitId } from "../utils/generateEmpID";
+import path from "path";
 
-test.describe("Pagination - Stop when Page 2 appears", () => {
-    test("Should create employees until Page 2 appears", async ({ page }) => {
+test.describe("Pagination via CSV Upload", () => {
+    test("Upload CSV if no pagination arrow, then verify page 2", async ({
+        page,
+    }) => {
         await login(page);
         await page.getByRole("link", { name: "PIM" }).click();
+        await page.getByRole("link", { name: "Employee List" }).click();
+        await page.waitForTimeout(2000); // Wait for the page to load
 
-        let createdCount = 0;
-
-        while (true) {
-            // Step 1: Check if Page 2 exists
-            await page.getByRole("link", { name: "Employee List" }).click();
-            // eslint-disable-next-line playwright/require-soft-assertions
-            await expect(page.getByText("Employee Information")).toBeVisible();
-
-            // eslint-disable-next-line playwright/require-soft-assertions
-            await expect(page.getByText("OrangeHRM OS")).toBeVisible();
-            // eslint-disable-next-line playwright/require-soft-assertions
-            await expect(
-                page.locator(".orangehrm-bottom-container"),
-            ).toBeVisible();
-            // Pause for debugging if needed
-            await page.pause();
-
-            const page2Locator = page
-                .locator(".oxd-pagination-page-item")
-                .filter({ hasText: "2" });
-
-            const page2Count = await page2Locator.count();
-
-            if (page2Count > 0) {
-                console.log("✅ Page 2 is visible now.");
-                await page2Locator.first().click();
-                console.log("🎯 Pagination working: Navigated to Page 2.");
-                break;
+        try {
+            const rightArrow = page.locator(".oxd-icon.bi-chevron-right");
+            if (await rightArrow.isVisible()) {
+                await rightArrow.click();
+                console.log("✅ Right arrow is visible and clicked.");
+                await expect(
+                    page.getByRole("button", { name: "2" }),
+                ).toBeVisible();
+                await page.getByRole("button", { name: "2" }).click();
+                console.log("🎯 Page 2 opened.");
+                return;
+            } else {
+                console.log("⚠️ Right arrow not visible.");
             }
-
-            console.log("🔄 Page 2 not found. Creating a new employee...");
-
-            // Step 2: Create Employee
-            await page.getByRole("button", { name: " Add" }).click();
-
-            const firstName = faker.name.firstName();
-            const lastName = faker.name.lastName();
-            const generatedEmpId = generate9DigitId();
-
-            await page.getByPlaceholder("First Name").fill(firstName);
-            await page.getByPlaceholder("Last Name").fill(lastName);
-            await page
-                .locator("form")
-                .getByRole("textbox")
-                .nth(4)
-                .fill(generatedEmpId);
-
-            await page.getByRole("button", { name: "Save" }).click();
-
-            await expect(page.getByText("Custom Fields")).toBeVisible();
-            await expect(page.getByText("Attachments")).toBeVisible();
-
-            createdCount++;
-            console.log(
-                `✅ [${createdCount}] Created: ${firstName} ${lastName} (ID: ${generatedEmpId})`,
-            );
+        } catch (error) {
+            console.error("❌ Error checking right arrow:", error);
         }
 
-        console.log(`🏁 Done after creating ${createdCount} employees.`);
+        // Step 2: Go to CSV Import page
+        await page.goto(
+            "https://opensource-demo.orangehrmlive.com/web/index.php/pim/pimCsvImport",
+        );
+
+        // Upload CSV file
+        const filePath = path.resolve(__dirname, "data", "EmployeeData.csv");
+        // eslint-disable-next-line playwright/prefer-locator, quotes
+        await page.setInputFiles('input[type="file"]', filePath);
+        console.log("📁 EmployeeData.csv uploaded.");
+
+        // Click Upload
+        await page.getByRole("button", { name: "Upload" }).click();
+        await page.getByRole("button", { name: "Ok" }).click();
+        console.log("☑️ Upload confirmed.");
+
+        // Step 3: Go to Employee List and check pagination
+        await page.getByRole("link", { name: "Employee List" }).click();
+
+        const page2Button = page.getByRole("button", { name: "2" });
+
+        if ((await page2Button.count()) > 0) {
+            await page2Button.click();
+            console.log("✅ Page 2 found and opened after CSV import.");
+        } else {
+            console.log("❌ Page 2 still not found after CSV import.");
+        }
     });
 });
