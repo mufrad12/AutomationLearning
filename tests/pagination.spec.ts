@@ -20,6 +20,7 @@ test.describe("Pagination via CSV Upload", () => {
                 await rightArrow.click();
                 console.log("✅ Right arrow is visible and clicked.");
 
+                // eslint-disable-next-line playwright/require-soft-assertions
                 await expect(
                     page.getByRole("button", { name: "2" }),
                 ).toBeVisible();
@@ -44,6 +45,7 @@ test.describe("Pagination via CSV Upload", () => {
             );
 
             // Upload CSV file
+            // eslint-disable-next-line playwright/prefer-locator, quotes
             await page.setInputFiles('input[type="file"]', filePath);
             console.log("📁 CSV file uploaded.");
 
@@ -58,6 +60,7 @@ test.describe("Pagination via CSV Upload", () => {
 
             try {
                 await page2Button.waitFor({ timeout: 5000 });
+                // eslint-disable-next-line playwright/prefer-locator
                 await page2Button.click();
                 console.log("✅ Page 2 found and opened after CSV import.");
             } catch {
