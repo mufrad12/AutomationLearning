@@ -1,9 +1,12 @@
 import { test } from "@playwright/test";
-import * as fs from "fs";
 import path from "path";
 import { login } from "../utilities/login";
 import { createEmployee } from "../utilities/createEmployee";
 import { searchEmployeeByIdAndDelete } from "../utilities/searchEmployeeActions";
+import {
+    readJsonFile,
+    clearJsonFile,
+} from "../utilities/playwright_utilities/fileUtils";
 
 const jsonFilename = "delete_employee.json";
 const deleteFilePath = path.resolve(
@@ -19,7 +22,7 @@ test.describe("Delete Employee", () => {
         const page = await context.newPage();
         await login(page);
 
-        // Create a fresh employee and write to tests/data/delete_employee.json
+        // Create a fresh employee and write to JSON
         await createEmployee(page, jsonFilename);
     });
 
@@ -28,22 +31,16 @@ test.describe("Delete Employee", () => {
     }) => {
         await login(page);
 
-        // Read the ID back from tests/data/delete_employee.json
-        const employeeData = JSON.parse(
-            fs.readFileSync(deleteFilePath, "utf8"),
-        );
+        // Read employeeId from JSON
+        const employeeData = readJsonFile(deleteFilePath);
         const employeeId = employeeData.employeeId;
 
-        // Search for and delete
+        // Search for and delete the employee
         await searchEmployeeByIdAndDelete(page, employeeId);
-
         console.log(`🗑️ Employee with ID ${employeeId} deleted.`);
 
-        // Clear out the JSON for next run
-        fs.writeFileSync(
-            deleteFilePath,
-            JSON.stringify({ employeeId: "" }, null, 2),
-        );
+        // Clear the JSON file for next run
+        clearJsonFile(deleteFilePath);
         console.log("🧹 delete_employee.json cleared.");
     });
 });

@@ -1,9 +1,11 @@
-import { test, expect } from "@playwright/test";
-import * as fs from "fs";
+import { test } from "@playwright/test";
 import path from "path";
 import { login } from "../utilities/login";
 import { createEmployee } from "../utilities/createEmployee";
 import { searchEmployeeByIdAndEdit } from "../utilities/searchEmployeeActions";
+import { readJsonFile } from "../utilities/playwright_utilities/fileUtils";
+import { clickElement } from "../utilities/playwright_utilities/click";
+import { assertVisible } from "../utilities/playwright_utilities/assert";
 
 const jsonFilename = "edit_employee.json";
 const editFilePath = path.resolve(process.cwd(), "tests", "data", jsonFilename);
@@ -13,34 +15,45 @@ test.describe("Edit Employee", () => {
         const context = await browser.newContext();
         const page = await context.newPage();
         await login(page);
-        // Create a fresh employee and write to tests/data/edit_employee.json
+
+        // Create a fresh employee and save to JSON
         await createEmployee(page, jsonFilename);
     });
 
     test("Should edit the employee using saved ID", async ({ page }) => {
         await login(page);
 
-        // Read the ID back from tests/data/edit_employee.json
-        const employeeData = JSON.parse(fs.readFileSync(editFilePath, "utf8"));
+        // Read employeeId from JSON
+        const employeeData = readJsonFile(editFilePath);
         const employeeId = employeeData.employeeId;
 
-        // Search + open edit
+        // Search for employee and open edit page
         await searchEmployeeByIdAndEdit(page, employeeId);
 
-        // Perform the edit steps
-        // eslint-disable-next-line playwright/require-soft-assertions
-        await expect(page.getByText("Contact Details")).toBeVisible();
-        await page
+        // Wait for the Contact Details section
+        await assertVisible(
+            page.getByText("Contact Details"),
+            "Contact Details Section",
+        );
+
+        // Edit blood type dropdown
+        const bloodTypeDropdown = page
             .locator("form")
             .filter({ hasText: "Blood Type-- Select --" })
-            .locator("i")
-            .click();
-        await page.getByRole("option", { name: "A+" }).click();
-        await page
+            .locator("i");
+        await clickElement(bloodTypeDropdown, page, "Blood Type Dropdown");
+        await clickElement(
+            page.getByRole("option", { name: "A+" }),
+            page,
+            "A+ Option",
+        );
+
+        // Save the form
+        const saveButton = page
             .locator("form")
             .filter({ hasText: "Blood TypeA+Test_Field Save" })
-            .getByRole("button")
-            .click();
+            .getByRole("button");
+        await clickElement(saveButton, page, "Save Button");
 
         console.log(`✅ Employee with ID ${employeeId} updated successfully`);
     });

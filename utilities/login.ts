@@ -7,14 +7,16 @@ export async function login(page: Page) {
     await navigateTo(
         page,
         "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
-        "Login Page",
+        "OrangeHRM Login Page",
     );
-    await fillInput(page.getByPlaceholder("Username"), "Admin", "Username");
-    await fillInput(page.getByPlaceholder("Password"), "admin123", "Password");
-    await clickElement(
-        page.getByRole("button", { name: "Login" }),
-        page,
-        "Login Button",
-    );
+
+    const usernameField = page.getByPlaceholder("Username");
+    const passwordField = page.getByPlaceholder("Password");
+    const loginButton = page.getByRole("button", { name: "Login" });
+
+    await fillInput(usernameField, "Admin", "Username Field");
+    await fillInput(passwordField, "admin123", "Password Field");
+    await clickElement(loginButton, page, "Login Button");
+
     console.log("✅ Login Complete");
 }

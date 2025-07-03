@@ -31,7 +31,7 @@ export function generateEmployeeCsvFile(filename: string = "EmployeeData.csv") {
 
     const rows = [headers.join(",")];
 
-    for (let i = 0; i < 56; i++) {
+    for (let i = 0; i < 60; i++) {
         const row = [
             faker.name.firstName(),
             "",
