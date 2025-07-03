@@ -1,9 +1,9 @@
 import { test } from "@playwright/test";
 import * as fs from "fs";
 import path from "path";
-import { login } from "../utils/login";
-import { createEmployee } from "../utils/createEmployee";
-import { searchEmployeeByIdAndDelete } from "../utils/searchEmployeeActions";
+import { login } from "../utilities/login";
+import { createEmployee } from "../utilities/createEmployee";
+import { searchEmployeeByIdAndDelete } from "../utilities/searchEmployeeActions";
 
 const jsonFilename = "delete_employee.json";
 const deleteFilePath = path.resolve(

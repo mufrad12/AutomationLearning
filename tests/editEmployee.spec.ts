@@ -1,9 +1,9 @@
 import { test, expect } from "@playwright/test";
 import * as fs from "fs";
 import path from "path";
-import { login } from "../utils/login";
-import { createEmployee } from "../utils/createEmployee";
-import { searchEmployeeByIdAndEdit } from "../utils/searchEmployeeActions";
+import { login } from "../utilities/login";
+import { createEmployee } from "../utilities/createEmployee";
+import { searchEmployeeByIdAndEdit } from "../utilities/searchEmployeeActions";
 
 const jsonFilename = "edit_employee.json";
 const editFilePath = path.resolve(process.cwd(), "tests", "data", jsonFilename);

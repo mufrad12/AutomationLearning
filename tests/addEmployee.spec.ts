@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
-import { login } from "../utils/login";
-import { createEmployee } from "../utils/createEmployee";
+import { login } from "../utilities/login";
+import { createEmployee } from "../utilities/createEmployee";
 
 test.describe("Add Employee", () => {
     test("Should add employee and save ID", async ({ page }) => {

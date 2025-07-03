@@ -1,10 +1,10 @@
 {
     "name": "Test Report",
     "logo": null,
-    "date": 1751492696898,
-    "dateH": "7/3/2025, 3:44:56 AM",
-    "duration": 5545,
-    "durationH": "5.5s",
+    "date": 1751548882480,
+    "dateH": "7/3/2025, 7:21:22 PM",
+    "duration": 8857,
+    "durationH": "8.9s",
     "cwd": "F:/AGT/Automation/AutomationLearning",
     "outputFile": "F:\\AGT\\Automation\\AutomationLearning\\monocart-report\\index.html",
     "outputDir": "F:\\AGT\\Automation\\AutomationLearning\\monocart-report",
@@ -27,49 +27,67 @@
         "release": "10.0.26100",
         "type": "Windows_NT",
         "version": "Windows 11 Pro",
-        "uptime": 114097.234,
+        "uptime": 14824.375,
         "hostname": "Mufrad",
-        "pid": 28840,
+        "pid": 2208,
         "node": "22.14.0",
         "v8": "12.4.254.21-node.22",
-        "timestampStart": 1751492696898,
+        "timestampStart": 1751548882480,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 38.52
+                    "percent": 17.73
                 },
                 "mem": {
-                    "free": 4126048256
+                    "free": 4487024640
                 },
-                "timestamp": 1751492698913
+                "timestamp": 1751548884495
             },
             {
                 "cpu": {
-                    "percent": 18.89
+                    "percent": 22.71
                 },
                 "mem": {
-                    "free": 3967139840
+                    "free": 4361244672
                 },
-                "timestamp": 1751492700926
+                "timestamp": 1751548886507
             },
             {
                 "cpu": {
-                    "percent": 29.49
+                    "percent": 14.78
                 },
                 "mem": {
-                    "free": 4151042048
+                    "free": 4276486144
                 },
-                "timestamp": 1751492702443
+                "timestamp": 1751548888515
+            },
+            {
+                "cpu": {
+                    "percent": 31.02
+                },
+                "mem": {
+                    "free": 4458967040
+                },
+                "timestamp": 1751548890527
+            },
+            {
+                "cpu": {
+                    "percent": 19.7
+                },
+                "mem": {
+                    "free": 4474363904
+                },
+                "timestamp": 1751548891333
             }
         ],
         "workers": 6,
         "jobs": [
             {
-                "caseId": "ca64c6efdfeb8cbd4820",
+                "caseId": "57467779e51917655d47",
                 "parallelIndex": 0,
-                "workerIndex": 2,
-                "timestamp": 1751492699281,
-                "duration": 2120
+                "workerIndex": 0,
+                "timestamp": 1751548884387,
+                "duration": 5772
             }
         ],
         "cwd": "F:/AGT/Automation/AutomationLearning",
@@ -79,7 +97,7 @@
         "testDir": "tests",
         "outputFile": "monocart-report/index.html",
         "outputDir": "monocart-report",
-        "timestampEnd": 1751492702443
+        "timestampEnd": 1751548891337
     },
     "artifacts": [],
     "trends": [],
@@ -198,99 +216,106 @@
             "caseNum": 1,
             "subs": [
                 {
-                    "id": "2889ebc841ec246e657c",
-                    "title": "pagination.spec.ts",
+                    "id": "d90e2d084e7b20152ba6",
+                    "title": "login.spec.ts",
                     "type": "suite",
                     "suiteType": "file",
                     "caseNum": 1,
                     "subs": [
                         {
-                            "id": "a940178bd0b568d15be8",
-                            "title": "Pagination via CSV Upload",
+                            "id": "e4de8d1272e43464920e",
+                            "title": "Login Test",
                             "type": "suite",
                             "suiteType": "describe",
                             "caseNum": 1,
                             "subs": [
                                 {
-                                    "id": "ca64c6efdfeb8cbd4820",
-                                    "title": "Upload CSV if no pagination arrow, then verify page 2",
+                                    "id": "57467779e51917655d47",
+                                    "title": "Login to OrangeHRM",
                                     "type": "case",
-                                    "caseType": "failed",
-                                    "ok": false,
-                                    "outcome": "unexpected",
+                                    "caseType": "passed",
+                                    "ok": true,
+                                    "outcome": "expected",
                                     "expectedStatus": "passed",
-                                    "location": "tests/pagination.spec.ts:6:9",
-                                    "timestamps": [
-                                        1751492699281,
-                                        1751492701401
+                                    "location": "tests/login.spec.ts:5:9",
+                                    "logs": [
+                                        "✅ Navigated to Login Page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n",
+                                        "✅ Filled Username with \"Admin\"\n",
+                                        "✅ Filled Password with \"admin123\"\n",
+                                        "✅ Clicked on Login Button\n",
+                                        "✅ Login Complete\n"
                                     ],
-                                    "duration": 2120,
+                                    "timestamps": [
+                                        1751548884387,
+                                        1751548890159
+                                    ],
+                                    "duration": 5772,
                                     "tags": [],
                                     "timeout": 10800000,
                                     "retry": 0,
-                                    "status": "failed",
-                                    "stepNum": 13,
-                                    "stepFailed": 1,
+                                    "status": "passed",
+                                    "stepNum": 15,
+                                    "stepFailed": 0,
                                     "stepSubs": true,
                                     "subs": [
                                         {
-                                            "id": "p9opf358x9sx2jjjr9hq",
+                                            "id": "b3tg3aydm5yz8jp3r70i",
                                             "title": "Before Hooks",
                                             "type": "step",
                                             "stepType": "hook",
-                                            "duration": 448,
+                                            "duration": 412,
                                             "location": "",
                                             "subs": [
                                                 {
-                                                    "id": "zpjkdis0bsnblo1bwrgm",
+                                                    "id": "ec14av98pjlzdlhuxbjj",
                                                     "title": "browser",
                                                     "type": "step",
                                                     "stepType": "fixture",
-                                                    "duration": 216,
+                                                    "duration": 177,
                                                     "location": "",
                                                     "subs": [
                                                         {
-                                                            "id": "3a0pgnlpuzfmddziwpfz",
+                                                            "id": "j6isgh4leig92objkeuw",
                                                             "title": "Launch browser",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 211,
+                                                            "duration": 172,
                                                             "location": ""
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    "id": "dfs8ayl639vtl48k2slz",
+                                                    "id": "5fw8ucupxx5phthjmxx2",
                                                     "title": "context",
                                                     "type": "step",
                                                     "stepType": "fixture",
-                                                    "duration": 26,
+                                                    "duration": 30,
                                                     "location": "",
                                                     "subs": [
                                                         {
-                                                            "id": "znbogvds99smeylkh6vr",
+                                                            "id": "znwcgm9vmxcy1ye02oll",
                                                             "title": "Create context",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 16,
+                                                            "duration": 18,
                                                             "location": ""
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    "id": "fldoyct31mj0jzdta02j",
+                                                    "id": "456xa50qobjj6uu09wsd",
                                                     "title": "page",
                                                     "type": "step",
                                                     "stepType": "fixture",
-                                                    "duration": 198,
+                                                    "duration": 197,
                                                     "location": "",
                                                     "subs": [
                                                         {
-                                                            "id": "kestn7t85f4pzub435wi",
+                                                            "id": "bbswp86n1yyov789t51z",
                                                             "title": "Create page",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 196,
+                                                            "duration": 194,
                                                             "location": ""
                                                         }
                                                     ]
@@ -298,57 +323,67 @@
                                             ]
                                         },
                                         {
-                                            "id": "gf3krknyj5r49mizfil6",
+                                            "id": "fft7jnw4y0tfyeakcabh",
                                             "title": "Navigate to \"/web/index.php/auth/login\"",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 1395,
-                                            "location": "utils/login.ts:4:16",
-                                            "errors": [
-                                                "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\n    at login (F:\\AGT\\Automation\\AutomationLearning\\utils\\login.ts:4:16)\n    at F:\\AGT\\Automation\\AutomationLearning\\tests\\pagination.spec.ts:9:20"
-                                            ],
-                                            "errorNum": 1
+                                            "duration": 3373,
+                                            "location": "utilities/playwright_utilities/goto.ts:9:20"
                                         },
                                         {
-                                            "id": "6hj8giw6i502b9313cxr",
+                                            "id": "80kk7dnf1nw9lt9dkf6y",
+                                            "title": "Fill \"Admin\" getByPlaceholder('Username')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 366,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "3xm68ho2f0q2t6mkk1cr",
+                                            "title": "Fill \"admin123\" getByPlaceholder('Password')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 18,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "vlhxk4biyt91nndshnlt",
+                                            "title": "Click getByRole('button', { name: 'Login' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 1257,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "hwjarf4wzs8p96o0jy5r",
+                                            "title": "toHaveURL",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 34,
+                                            "location": "tests/login.spec.ts:8:28"
+                                        },
+                                        {
+                                            "id": "r3tmvroba2zbap0u06m4",
                                             "title": "After Hooks",
                                             "type": "step",
                                             "stepType": "hook",
-                                            "duration": 50,
+                                            "duration": 179,
                                             "location": "",
                                             "subs": [
                                                 {
-                                                    "id": "q44jp547spnswylq69dg",
+                                                    "id": "y4ncbyh5y4hgunwak4s6",
                                                     "title": "page",
                                                     "type": "step",
                                                     "stepType": "fixture",
-                                                    "duration": 0,
+                                                    "duration": 1,
                                                     "location": ""
                                                 },
                                                 {
-                                                    "id": "w18nqg9hkx6ys6hf453u",
+                                                    "id": "8rpbwxmnck5bgcwamlpq",
                                                     "title": "context",
                                                     "type": "step",
                                                     "stepType": "fixture",
                                                     "duration": 0,
-                                                    "location": ""
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "7nsyxzgmwox4cjml6qs0",
-                                            "title": "Worker Cleanup",
-                                            "type": "step",
-                                            "stepType": "hook",
-                                            "duration": 186,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "mouxqz2ox6a3drcry2f5",
-                                                    "title": "browser",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 184,
                                                     "location": ""
                                                 }
                                             ]
@@ -357,19 +392,17 @@
                                     "attachments": [
                                         {
                                             "name": "trace",
-                                            "path": "attachments/7fde6d7d1267a822708fe3de6b882b2404d105fd.zip",
+                                            "path": "attachments/4f7bb2df392531beaa1f741855b82bdd0d3e8537.zip",
                                             "contentType": "application/zip",
                                             "retry": 0
                                         }
-                                    ],
-                                    "errorNum": 1,
-                                    "errorId": "gf3krknyj5r49mizfil6"
+                                    ]
                                 }
                             ],
-                            "location": "tests/pagination.spec.ts:5:6"
+                            "location": "tests/login.spec.ts:4:6"
                         }
                     ],
-                    "location": "tests/pagination.spec.ts:0:0"
+                    "location": "tests/login.spec.ts:0:0"
                 }
             ]
         }
@@ -400,11 +433,11 @@
         },
         "failed": {
             "name": "Failed",
-            "value": 1,
+            "value": 0,
             "color": "#d00",
             "nav": true,
             "id": "failed",
-            "percent": "100.0%"
+            "percent": "0.0%"
         },
         "flaky": {
             "name": "Flaky",
@@ -424,15 +457,15 @@
         },
         "passed": {
             "name": "Passed",
-            "value": 0,
+            "value": 1,
             "color": "green",
             "nav": true,
             "id": "passed",
-            "percent": "0.0%"
+            "percent": "100.0%"
         },
         "steps": {
             "name": "Steps",
-            "value": 13,
+            "value": 15,
             "id": "steps"
         },
         "suites": {
@@ -467,7 +500,7 @@
         "errors": {
             "name": "Errors",
             "icon": "error",
-            "value": 1,
+            "value": 0,
             "id": "errors"
         },
         "retries": {
@@ -479,7 +512,7 @@
         "logs": {
             "name": "Logs",
             "icon": "log",
-            "value": 0,
+            "value": 5,
             "id": "logs"
         },
         "attachments": {
@@ -498,7 +531,7 @@
         "width": 360,
         "height": 150,
         "margin": 10,
-        "svg": "<svg viewBox=\"0 0 360 150\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-failed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"#d00\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-passed\"><path d=\"\" fill=\"green\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 15)\"><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"#d00\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 30)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"orange\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 60)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"gray\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 90)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"green\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g></g></svg>"
+        "svg": "<svg viewBox=\"0 0 360 150\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-failed\"><path d=\"\" fill=\"#d00\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-passed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"green\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 15)\"><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"#d00\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 30)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"orange\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 60)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"gray\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 90)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"green\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g></g></svg>"
     },
     "htmlPath": "monocart-report/index.html"
 }

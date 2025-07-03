@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
-import { login } from "../utils/login";
-import { generateEmployeeCsvFile } from "../utils/generateCsvData";
+import { login } from "../utilities/login";
+import { generateEmployeeCsvFile } from "../utilities/generateCsvData";
 
 test.describe("Pagination via CSV Upload", () => {
     test("Upload CSV if no pagination arrow, then verify page 2", async ({
