@@ -4,6 +4,7 @@ import { generateEmployeeCsvFile } from "../utilities/generateCsvData";
 import { clickElement } from "../utilities/playwright_utilities/click";
 import { uploadFile } from "../utilities/playwright_utilities/upload";
 import { waitForElement } from "../utilities/playwright_utilities/waitForElement";
+import { CsvImportPage } from "page_objects/CsvImportPage";
 
 test.describe("Pagination via CSV Upload", () => {
     test("Upload CSV if no pagination arrow, then verify page 2", async ({
@@ -11,6 +12,7 @@ test.describe("Pagination via CSV Upload", () => {
     }) => {
         await login(page);
 
+        // Go to Employee List
         await clickElement(
             page.getByRole("link", { name: "PIM" }),
             page,
@@ -46,33 +48,35 @@ test.describe("Pagination via CSV Upload", () => {
         }
 
         if (shouldUploadCsv) {
-            const filePath = generateEmployeeCsvFile(); // Generates CSV dynamically
+            const filePath = generateEmployeeCsvFile();
 
             await page.goto(
                 "https://opensource-demo.orangehrmlive.com/web/index.php/pim/pimCsvImport",
             );
+
+            const csvImportPage = new CsvImportPage(page);
+
+            // Upload file using POM + locator
             await uploadFile(
-                page,
-                // eslint-disable-next-line quotes
-                'input[type="file"]',
+                csvImportPage.getFileInput(),
                 filePath,
                 "CSV File Input",
             );
             console.log("📁 CSV file uploaded.");
 
             await clickElement(
-                page.getByRole("button", { name: "Upload" }),
+                csvImportPage.getUploadButton(),
                 page,
                 "Upload Button",
             );
             await clickElement(
-                page.getByRole("button", { name: "Ok" }),
+                csvImportPage.getConfirmationOkButton(),
                 page,
                 "Confirmation OK Button",
             );
             console.log("☑️ Upload confirmed.");
 
-            // Go back to Employee List and check for Page 2
+            // Go back to Employee List and verify pagination
             await clickElement(
                 page.getByRole("link", { name: "Employee List" }),
                 page,

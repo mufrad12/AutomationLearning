@@ -2,32 +2,30 @@ import { Page } from "@playwright/test";
 import { clickElement } from "./playwright_utilities/click";
 import { fillInput } from "./playwright_utilities/fill";
 import { assertVisible } from "./playwright_utilities/assert";
-//import { waitForElement } from "./playwright_utilities/waitForElement";
+import { EmployeePage } from "page_objects/EmployeePage";
 
 export async function searchEmployeeByIdAndEdit(
     page: Page,
     employeeId: string,
 ) {
+    const employeePage = new EmployeePage(page);
+
+    await clickElement(employeePage.getPimMenu(), page, "PIM Menu");
     await clickElement(
-        page.getByRole("link", { name: "PIM" }),
-        page,
-        "PIM Menu",
-    );
-    await clickElement(
-        page.getByRole("link", { name: "Employee List" }),
+        employeePage.getEmployeeListMenu(),
         page,
         "Employee List Menu",
     );
 
-    const searchField = page.getByRole("textbox").nth(2);
+    const searchField = employeePage.getSearchTextboxByIndex(2);
     await fillInput(searchField, employeeId, "Employee Search Field");
 
-    const searchButton = page.getByRole("button", { name: "Search" });
+    const searchButton = employeePage.getSearchButton();
     await clickElement(searchButton, page, "Search Button");
 
     await assertVisible(page.getByText("Record Found"), "Record Found Text");
 
-    const editIcon = page.locator(".oxd-icon.bi-pencil-fill");
+    const editIcon = employeePage.getEditIcon();
     await clickElement(editIcon, page, "Edit Icon");
 }
 
@@ -35,28 +33,26 @@ export async function searchEmployeeByIdAndDelete(
     page: Page,
     employeeId: string,
 ) {
+    const employeePage = new EmployeePage(page);
+
+    await clickElement(employeePage.getPimMenu(), page, "PIM Menu");
     await clickElement(
-        page.getByRole("link", { name: "PIM" }),
-        page,
-        "PIM Menu",
-    );
-    await clickElement(
-        page.getByRole("link", { name: "Employee List" }),
+        employeePage.getEmployeeListMenu(),
         page,
         "Employee List Menu",
     );
 
-    const searchField = page.getByRole("textbox").nth(2);
+    const searchField = employeePage.getSearchTextboxByIndex(2);
     await fillInput(searchField, employeeId, "Employee Search Field");
 
-    const searchButton = page.getByRole("button", { name: "Search" });
+    const searchButton = employeePage.getSearchButton();
     await clickElement(searchButton, page, "Search Button");
 
     await assertVisible(page.getByText("Record Found"), "Record Found Text");
 
-    const deleteIcon = page.getByRole("button", { name: "" });
+    const deleteIcon = employeePage.getDeleteButton();
     await clickElement(deleteIcon, page, "Delete Icon");
 
-    const confirmDelete = page.getByRole("button", { name: "Yes, Delete" });
+    const confirmDelete = employeePage.getConfirmDeleteButton();
     await clickElement(confirmDelete, page, "Confirm Delete Button");
 }

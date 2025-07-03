@@ -1,15 +1,15 @@
 {
     "name": "Test Report",
     "logo": null,
-    "date": 1751557760196,
-    "dateH": "7/3/2025, 9:49:20 PM",
-    "duration": 19167,
-    "durationH": "19.2s",
+    "date": 1751570817544,
+    "dateH": "7/4/2025, 1:26:57 AM",
+    "duration": 32561,
+    "durationH": "32.6s",
     "cwd": "F:/AGT/Automation/AutomationLearning",
     "outputFile": "F:\\AGT\\Automation\\AutomationLearning\\monocart-report\\index.html",
     "outputDir": "F:\\AGT\\Automation\\AutomationLearning\\monocart-report",
     "metadata": {
-        "actualWorkers": 1
+        "actualWorkers": 5
     },
     "system": {
         "cpu": {
@@ -27,112 +27,194 @@
         "release": "10.0.26100",
         "type": "Windows_NT",
         "version": "Windows 11 Pro",
-        "uptime": 23703.234,
+        "uptime": 36760.593,
         "hostname": "Mufrad",
-        "pid": 27808,
+        "pid": 30608,
         "node": "22.14.0",
         "v8": "12.4.254.21-node.22",
-        "timestampStart": 1751557760196,
+        "timestampStart": 1751570817544,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 21.1
+                    "percent": 55.49
                 },
                 "mem": {
-                    "free": 3445391360
+                    "free": 2289405952
                 },
-                "timestamp": 1751557762210
+                "timestamp": 1751570819557
             },
             {
                 "cpu": {
-                    "percent": 17.33
+                    "percent": 88.92
                 },
                 "mem": {
-                    "free": 3289997312
+                    "free": 1797545984
                 },
-                "timestamp": 1751557764224
+                "timestamp": 1751570822040
             },
             {
                 "cpu": {
-                    "percent": 20.62
+                    "percent": 34.89
                 },
                 "mem": {
-                    "free": 3215851520
+                    "free": 2241155072
                 },
-                "timestamp": 1751557766230
+                "timestamp": 1751570824052
             },
             {
                 "cpu": {
-                    "percent": 21.04
+                    "percent": 80.62
                 },
                 "mem": {
-                    "free": 3162345472
+                    "free": 2062753792
                 },
-                "timestamp": 1751557768242
+                "timestamp": 1751570826068
             },
             {
                 "cpu": {
-                    "percent": 35.71
+                    "percent": 77.19
                 },
                 "mem": {
-                    "free": 3089932288
+                    "free": 2115878912
                 },
-                "timestamp": 1751557770254
+                "timestamp": 1751570828082
             },
             {
                 "cpu": {
-                    "percent": 12.7
+                    "percent": 64.41
                 },
                 "mem": {
-                    "free": 3032375296
+                    "free": 1941409792
                 },
-                "timestamp": 1751557772261
+                "timestamp": 1751570830099
             },
             {
                 "cpu": {
-                    "percent": 41.89
+                    "percent": 37.88
                 },
                 "mem": {
-                    "free": 2941575168
+                    "free": 1842671616
                 },
-                "timestamp": 1751557774266
+                "timestamp": 1751570832112
             },
             {
                 "cpu": {
-                    "percent": 32.36
+                    "percent": 71.78
                 },
                 "mem": {
-                    "free": 2918969344
+                    "free": 2231128064
                 },
-                "timestamp": 1751557776282
+                "timestamp": 1751570834130
             },
             {
                 "cpu": {
-                    "percent": 56.4
+                    "percent": 47.22
                 },
                 "mem": {
-                    "free": 3209310208
+                    "free": 2157547520
                 },
-                "timestamp": 1751557778287
+                "timestamp": 1751570836140
             },
             {
                 "cpu": {
-                    "percent": 20.4
+                    "percent": 29.95
                 },
                 "mem": {
-                    "free": 3264634880
+                    "free": 2455629824
                 },
-                "timestamp": 1751557779359
+                "timestamp": 1751570838153
+            },
+            {
+                "cpu": {
+                    "percent": 25.06
+                },
+                "mem": {
+                    "free": 2407223296
+                },
+                "timestamp": 1751570840162
+            },
+            {
+                "cpu": {
+                    "percent": 32.17
+                },
+                "mem": {
+                    "free": 2353508352
+                },
+                "timestamp": 1751570842170
+            },
+            {
+                "cpu": {
+                    "percent": 17.75
+                },
+                "mem": {
+                    "free": 2288836608
+                },
+                "timestamp": 1751570844180
+            },
+            {
+                "cpu": {
+                    "percent": 22.3
+                },
+                "mem": {
+                    "free": 2205519872
+                },
+                "timestamp": 1751570846189
+            },
+            {
+                "cpu": {
+                    "percent": 46.99
+                },
+                "mem": {
+                    "free": 2917367808
+                },
+                "timestamp": 1751570848202
+            },
+            {
+                "cpu": {
+                    "percent": 10.67
+                },
+                "mem": {
+                    "free": 3319615488
+                },
+                "timestamp": 1751570850102
             }
         ],
         "workers": 6,
         "jobs": [
             {
-                "caseId": "ca64c6efdfeb8cbd4820",
+                "caseId": "4db08cfb2823f469f039",
                 "parallelIndex": 0,
                 "workerIndex": 0,
-                "timestamp": 1751557762309,
-                "duration": 15782
+                "timestamp": 1751570819984,
+                "duration": 17459
+            },
+            {
+                "caseId": "74f8d1f4c18c947792c1",
+                "parallelIndex": 1,
+                "workerIndex": 1,
+                "timestamp": 1751570820023,
+                "duration": 27549
+            },
+            {
+                "caseId": "685329670e3af561eae7",
+                "parallelIndex": 2,
+                "workerIndex": 2,
+                "timestamp": 1751570820021,
+                "duration": 28802
+            },
+            {
+                "caseId": "57467779e51917655d47",
+                "parallelIndex": 3,
+                "workerIndex": 3,
+                "timestamp": 1751570819721,
+                "duration": 6697
+            },
+            {
+                "caseId": "ca64c6efdfeb8cbd4820",
+                "parallelIndex": 4,
+                "workerIndex": 4,
+                "timestamp": 1751570820020,
+                "duration": 12918
             }
         ],
         "cwd": "F:/AGT/Automation/AutomationLearning",
@@ -142,7 +224,7 @@
         "testDir": "tests",
         "outputFile": "monocart-report/index.html",
         "outputDir": "monocart-report",
-        "timestampEnd": 1751557779363
+        "timestampEnd": 1751570850105
     },
     "artifacts": [],
     "trends": [],
@@ -258,8 +340,1257 @@
             "title": "chromium",
             "type": "suite",
             "suiteType": "project",
-            "caseNum": 1,
+            "caseNum": 5,
             "subs": [
+                {
+                    "id": "5189373b53535d8a9c58",
+                    "title": "addEmployee.spec.ts",
+                    "type": "suite",
+                    "suiteType": "file",
+                    "caseNum": 1,
+                    "subs": [
+                        {
+                            "id": "02796f52e72c5a2fbe17",
+                            "title": "Add Employee",
+                            "type": "suite",
+                            "suiteType": "describe",
+                            "caseNum": 1,
+                            "subs": [
+                                {
+                                    "id": "4db08cfb2823f469f039",
+                                    "title": "Should add employee and save ID",
+                                    "type": "case",
+                                    "caseType": "passed",
+                                    "ok": true,
+                                    "outcome": "expected",
+                                    "expectedStatus": "passed",
+                                    "location": "tests/addEmployee.spec.ts:6:9",
+                                    "logs": [
+                                        "✅ Navigated to OrangeHRM Login Page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n",
+                                        "✅ Filled Username Field with \"Admin\"\n",
+                                        "✅ Filled Password Field with \"admin123\"\n",
+                                        "✅ Clicked on Login Button\n",
+                                        "✅ Login Complete\n",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "🔢 Unique Employee ID: 176252999\n",
+                                        "✅ Clicked on PIM Menu\n",
+                                        "✅ Clicked on Add Employee Button\n",
+                                        "✅ Filled First Name Field with \"Oscar\"\n",
+                                        "✅ Filled Last Name Field with \"Mayer\"\n",
+                                        "✅ Filled Employee ID Field with \"176252999\"\n",
+                                        "✅ Got value \"176252999\" from Employee ID Field\n",
+                                        "✅ Clicked on Save Button\n",
+                                        "✅ Contact Details Section is visible.\n",
+                                        "✅ Employee Full Name Section is visible.\n",
+                                        "👤 Created: Oscar Mayer | ID: 176252999\n",
+                                        "✅ Created Employee ID: 176252999\n"
+                                    ],
+                                    "timestamps": [
+                                        1751570819984,
+                                        1751570837443
+                                    ],
+                                    "duration": 17459,
+                                    "tags": [],
+                                    "timeout": 10800000,
+                                    "retry": 0,
+                                    "status": "passed",
+                                    "stepNum": 23,
+                                    "stepFailed": 0,
+                                    "stepSubs": true,
+                                    "subs": [
+                                        {
+                                            "id": "wy8lh2v4w4ru58q9laj1",
+                                            "title": "Before Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 1120,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "dhdyrvuspwx5e9azhc8k",
+                                                    "title": "browser",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 529,
+                                                    "location": "",
+                                                    "subs": [
+                                                        {
+                                                            "id": "qt0ukevs63t9gbn5hdc8",
+                                                            "title": "Launch browser",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 513,
+                                                            "location": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "rhnfd5f1rj2xq7zqmn1p",
+                                                    "title": "context",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 66,
+                                                    "location": "",
+                                                    "subs": [
+                                                        {
+                                                            "id": "04osl0amazb69xyostz2",
+                                                            "title": "Create context",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 51,
+                                                            "location": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "rlqt0ec3jif4qfihk7r7",
+                                                    "title": "page",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 493,
+                                                    "location": "",
+                                                    "subs": [
+                                                        {
+                                                            "id": "f6hjrtdag91cmhslrgl6",
+                                                            "title": "Create page",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 489,
+                                                            "location": ""
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "t4gfvmbyh4i52w7uvtjc",
+                                            "title": "Navigate to \"/web/index.php/auth/login\"",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 4090,
+                                            "location": "utilities/playwright_utilities/goto.ts:9:20"
+                                        },
+                                        {
+                                            "id": "o636ufke7usahzvbavzo",
+                                            "title": "Fill \"Admin\" getByPlaceholder('Username')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 915,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "ks4yqs90x2u4lfi8hbrr",
+                                            "title": "Fill \"admin123\" getByPlaceholder('Password')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 50,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "6dnf6w1lqnni08a4cz5f",
+                                            "title": "Click getByRole('button', { name: 'Login' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 1418,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "k4krugfl4rp9vnm1o25u",
+                                            "title": "Click getByRole('link', { name: 'PIM' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 1929,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "i8gns97bfye132xe9wz3",
+                                            "title": "Click getByRole('button', { name: ' Add' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 1092,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "q397zjlpiqvzyimcec5c",
+                                            "title": "Fill \"Oscar\" getByPlaceholder('First Name')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 372,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "1uyb61nvhn8r7l5hwale",
+                                            "title": "Fill \"Mayer\" getByPlaceholder('Last Name')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 29,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "zw1835brjvmzav8hyiei",
+                                            "title": "Fill \"176252999\" locator('xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 333,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "prtlvxyhhcrmtyzb55u5",
+                                            "title": "Get input value locator('xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 17,
+                                            "location": "utilities/playwright_utilities/getInputValue.ts:8:37"
+                                        },
+                                        {
+                                            "id": "esuijl6f9dod3kqc9y0q",
+                                            "title": "Click getByRole('button', { name: 'Save' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 31,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "s7gvjh5inx2s8m3s4i0z",
+                                            "title": "toBeVisible",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 5287,
+                                            "location": "utilities/playwright_utilities/assert.ts:6:31",
+                                            "count": 2
+                                        },
+                                        {
+                                            "id": "v5tx6xxdchs6gzjsydme",
+                                            "title": "After Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 426,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "xf6b19fu6cq97hm9507v",
+                                                    "title": "page",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 1,
+                                                    "location": ""
+                                                },
+                                                {
+                                                    "id": "9a3vekwnx58w4ru6y9o0",
+                                                    "title": "context",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 1,
+                                                    "location": ""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "attachments": [
+                                        {
+                                            "name": "trace",
+                                            "path": "attachments/077cc88909387c82e3b734fdff841accf03d2192.zip",
+                                            "contentType": "application/zip",
+                                            "retry": 0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "location": "tests/addEmployee.spec.ts:5:6"
+                        }
+                    ],
+                    "location": "tests/addEmployee.spec.ts:0:0"
+                },
+                {
+                    "id": "5422eb7110bba654dcde",
+                    "title": "deleteEmployee.spec.ts",
+                    "type": "suite",
+                    "suiteType": "file",
+                    "caseNum": 1,
+                    "subs": [
+                        {
+                            "id": "0e96de8f6c35ec261a4a",
+                            "title": "Delete Employee",
+                            "type": "suite",
+                            "suiteType": "describe",
+                            "caseNum": 1,
+                            "subs": [
+                                {
+                                    "id": "74f8d1f4c18c947792c1",
+                                    "title": "Should delete employee using saved ID and clear the file",
+                                    "type": "case",
+                                    "caseType": "passed",
+                                    "ok": true,
+                                    "outcome": "expected",
+                                    "expectedStatus": "passed",
+                                    "location": "tests/deleteEmployee.spec.ts:29:9",
+                                    "logs": [
+                                        "✅ Navigated to OrangeHRM Login Page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n",
+                                        "✅ Filled Username Field with \"Admin\"\n",
+                                        "✅ Filled Password Field with \"admin123\"\n",
+                                        "✅ Clicked on Login Button\n",
+                                        "✅ Login Complete\n",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "🔢 Unique Employee ID: 909981503\n",
+                                        "✅ Clicked on PIM Menu\n",
+                                        "✅ Clicked on Add Employee Button\n",
+                                        "✅ Filled First Name Field with \"Wilber\"\n",
+                                        "✅ Filled Last Name Field with \"Stehr\"\n",
+                                        "✅ Filled Employee ID Field with \"909981503\"\n",
+                                        "✅ Got value \"909981503\" from Employee ID Field\n",
+                                        "✅ Clicked on Save Button\n",
+                                        "✅ Contact Details Section is visible.\n",
+                                        "✅ Employee Full Name Section is visible.\n",
+                                        "👤 Created: Wilber Stehr | ID: 909981503\n",
+                                        "✅ Navigated to OrangeHRM Login Page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n",
+                                        "✅ Filled Username Field with \"Admin\"\n",
+                                        "✅ Filled Password Field with \"admin123\"\n",
+                                        "✅ Clicked on Login Button\n",
+                                        "✅ Login Complete\n",
+                                        "✅ Clicked on PIM Menu\n",
+                                        "✅ Clicked on Employee List Menu\n",
+                                        "✅ Filled Employee Search Field with \"909981503\"\n",
+                                        "✅ Clicked on Search Button\n",
+                                        "✅ Record Found Text is visible.\n",
+                                        "✅ Clicked on Delete Icon\n",
+                                        "✅ Clicked on Confirm Delete Button\n",
+                                        "🗑️ Employee with ID 909981503 deleted.\n",
+                                        "🧹 delete_employee.json cleared.\n"
+                                    ],
+                                    "timestamps": [
+                                        1751570820023,
+                                        1751570847572
+                                    ],
+                                    "duration": 27549,
+                                    "tags": [],
+                                    "timeout": 10800000,
+                                    "retry": 0,
+                                    "status": "passed",
+                                    "stepNum": 37,
+                                    "stepFailed": 0,
+                                    "stepSubs": true,
+                                    "subs": [
+                                        {
+                                            "id": "idcg5b31g98ssvu9lto4",
+                                            "title": "Before Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 16829,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "v5h1xyhsmhhhtytwvq54",
+                                                    "title": "beforeEach hook",
+                                                    "type": "step",
+                                                    "stepType": "hook",
+                                                    "duration": 16671,
+                                                    "location": "tests/deleteEmployee.spec.ts:20:10",
+                                                    "subs": [
+                                                        {
+                                                            "id": "e96eduxu9ydgi9lirf54",
+                                                            "title": "browser",
+                                                            "type": "step",
+                                                            "stepType": "fixture",
+                                                            "duration": 680,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "mlvaqddwgbpio4sleoc3",
+                                                                    "title": "Launch browser",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 666,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "uuwx2drkozl4pp2la53k",
+                                                            "title": "Create context",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 29,
+                                                            "location": "tests/deleteEmployee.spec.ts:21:25"
+                                                        },
+                                                        {
+                                                            "id": "cvd19aondxv6jjx5v3z7",
+                                                            "title": "Create page",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 582,
+                                                            "location": "tests/deleteEmployee.spec.ts:22:36"
+                                                        },
+                                                        {
+                                                            "id": "v1tl2bpsjbkrgkhypmpa",
+                                                            "title": "Navigate to \"/web/index.php/auth/login\"",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 3802,
+                                                            "location": "utilities/playwright_utilities/goto.ts:9:20"
+                                                        },
+                                                        {
+                                                            "id": "6dtac6lserbg3ktbi9ui",
+                                                            "title": "Fill \"Admin\" getByPlaceholder('Username')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 394,
+                                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "yt7wst7ya3lmk6p3jaij",
+                                                            "title": "Fill \"admin123\" getByPlaceholder('Password')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 45,
+                                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "tc3b92qsmljc8ocknvr4",
+                                                            "title": "Click getByRole('button', { name: 'Login' })",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 1665,
+                                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "3ldpgs1okhkd2o674mpy",
+                                                            "title": "Click getByRole('link', { name: 'PIM' })",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 2069,
+                                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "iw6c9b70pry7ykkn6kb3",
+                                                            "title": "Click getByRole('button', { name: ' Add' })",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 1215,
+                                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "d94g9mqdb1zxa2sg739v",
+                                                            "title": "Fill \"Wilber\" getByPlaceholder('First Name')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 331,
+                                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "dls0afpgboak1mdfc95x",
+                                                            "title": "Fill \"Stehr\" getByPlaceholder('Last Name')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 49,
+                                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "htnfdk1jzbutxwdkmhgc",
+                                                            "title": "Fill \"909981503\" locator('xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 334,
+                                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "y3b4eyjw1nb99ir2kkix",
+                                                            "title": "Get input value locator('xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 11,
+                                                            "location": "utilities/playwright_utilities/getInputValue.ts:8:37"
+                                                        },
+                                                        {
+                                                            "id": "uly4p31lpbov3cb4pbrr",
+                                                            "title": "Click getByRole('button', { name: 'Save' })",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 39,
+                                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "baw5qeix5wlr4mxql2tj",
+                                                            "title": "toBeVisible",
+                                                            "type": "step",
+                                                            "stepType": "expect",
+                                                            "duration": 5324,
+                                                            "location": "utilities/playwright_utilities/assert.ts:6:31",
+                                                            "count": 2
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "006rmln6bfhys6jbbvlj",
+                                                    "title": "context",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 25,
+                                                    "location": "",
+                                                    "subs": [
+                                                        {
+                                                            "id": "n4x6frhq8qbsiupuqsue",
+                                                            "title": "Create context",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 14,
+                                                            "location": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "bnpz2r2ufmuuw87ar31a",
+                                                    "title": "page",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 127,
+                                                    "location": "",
+                                                    "subs": [
+                                                        {
+                                                            "id": "x4eqmrqq3jj4w27z174h",
+                                                            "title": "Create page",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 126,
+                                                            "location": ""
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "gg85jdcov3w8s0joy7l0",
+                                            "title": "Navigate to \"/web/index.php/auth/login\"",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 3101,
+                                            "location": "utilities/playwright_utilities/goto.ts:9:20"
+                                        },
+                                        {
+                                            "id": "o1bn3gxysdu2n6tcujr8",
+                                            "title": "Fill \"Admin\" getByPlaceholder('Username')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 370,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "678mc28eicrtau7u09ta",
+                                            "title": "Fill \"admin123\" getByPlaceholder('Password')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 17,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "dvyodk4o4p99duoxngxp",
+                                            "title": "Click getByRole('button', { name: 'Login' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 1604,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "xgoa2wf36iuuifo3ybav",
+                                            "title": "Click getByRole('link', { name: 'PIM' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 1606,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "ogshztx68q9i5dvgv27a",
+                                            "title": "Click getByRole('link', { name: 'Employee List' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 1629,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "tozlo30k0mgixcsza5y3",
+                                            "title": "Fill \"909981503\" getByRole('textbox').nth(2)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 358,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "z6umj5qsyuviph7k3z5v",
+                                            "title": "Click getByRole('button', { name: 'Search' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 39,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "papp7kb2hgcyj9yzhi6c",
+                                            "title": "toBeVisible",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 904,
+                                            "location": "utilities/playwright_utilities/assert.ts:6:31"
+                                        },
+                                        {
+                                            "id": "2wi9rg8kmz7xx3zred3z",
+                                            "title": "Click getByRole('button', { name: '' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 39,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "mroxy20azqob2ek2gis0",
+                                            "title": "Click getByRole('button', { name: 'Yes, Delete' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 39,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "34k8nv5mumiy8kvcgvir",
+                                            "title": "After Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 571,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "9cu7j0m41axxs3qh3g1a",
+                                                    "title": "page",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 0,
+                                                    "location": ""
+                                                },
+                                                {
+                                                    "id": "pl8oi4uivi9p8bl0wor4",
+                                                    "title": "context",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 0,
+                                                    "location": ""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "attachments": [
+                                        {
+                                            "name": "trace",
+                                            "path": "attachments/13af94d47902bee7d4742768113faf4b4f6d4562.zip",
+                                            "contentType": "application/zip",
+                                            "retry": 0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "location": "tests/deleteEmployee.spec.ts:19:6"
+                        }
+                    ],
+                    "location": "tests/deleteEmployee.spec.ts:0:0"
+                },
+                {
+                    "id": "c4989b5056e98faadc87",
+                    "title": "editEmployee.spec.ts",
+                    "type": "suite",
+                    "suiteType": "file",
+                    "caseNum": 1,
+                    "subs": [
+                        {
+                            "id": "7feb3979826003f092d0",
+                            "title": "Edit Employee",
+                            "type": "suite",
+                            "suiteType": "describe",
+                            "caseNum": 1,
+                            "subs": [
+                                {
+                                    "id": "685329670e3af561eae7",
+                                    "title": "Should edit the employee using saved ID",
+                                    "type": "case",
+                                    "caseType": "passed",
+                                    "ok": true,
+                                    "outcome": "expected",
+                                    "expectedStatus": "passed",
+                                    "location": "tests/editEmployee.spec.ts:23:9",
+                                    "logs": [
+                                        "✅ Navigated to OrangeHRM Login Page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n",
+                                        "✅ Filled Username Field with \"Admin\"\n",
+                                        "✅ Filled Password Field with \"admin123\"\n",
+                                        "✅ Clicked on Login Button\n",
+                                        "✅ Login Complete\n",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "🔢 Unique Employee ID: 176247836\n",
+                                        "✅ Clicked on PIM Menu\n",
+                                        "✅ Clicked on Add Employee Button\n",
+                                        "✅ Filled First Name Field with \"Blanche\"\n",
+                                        "✅ Filled Last Name Field with \"Hane\"\n",
+                                        "✅ Filled Employee ID Field with \"176247836\"\n",
+                                        "✅ Got value \"176247836\" from Employee ID Field\n",
+                                        "✅ Clicked on Save Button\n",
+                                        "✅ Contact Details Section is visible.\n",
+                                        "✅ Employee Full Name Section is visible.\n",
+                                        "👤 Created: Blanche Hane | ID: 176247836\n",
+                                        "✅ Navigated to OrangeHRM Login Page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n",
+                                        "✅ Filled Username Field with \"Admin\"\n",
+                                        "✅ Filled Password Field with \"admin123\"\n",
+                                        "✅ Clicked on Login Button\n",
+                                        "✅ Login Complete\n",
+                                        "✅ Clicked on PIM Menu\n",
+                                        "✅ Clicked on Employee List Menu\n",
+                                        "✅ Filled Employee Search Field with \"176247836\"\n",
+                                        "✅ Clicked on Search Button\n",
+                                        "✅ Record Found Text is visible.\n",
+                                        "✅ Clicked on Edit Icon\n",
+                                        "✅ Contact Details Section is visible.\n",
+                                        "✅ Clicked on Blood Type Dropdown\n",
+                                        "✅ Clicked on A+ Option\n",
+                                        "✅ Clicked on Save Button\n",
+                                        "✅ Employee with ID 176247836 updated successfully\n"
+                                    ],
+                                    "timestamps": [
+                                        1751570820021,
+                                        1751570848823
+                                    ],
+                                    "duration": 28802,
+                                    "tags": [],
+                                    "timeout": 10800000,
+                                    "retry": 0,
+                                    "status": "passed",
+                                    "stepNum": 40,
+                                    "stepFailed": 0,
+                                    "stepSubs": true,
+                                    "subs": [
+                                        {
+                                            "id": "nl1w5jwftngx18ezo8gy",
+                                            "title": "Before Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 16376,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "s8k5rktvrdlzdcxf459u",
+                                                    "title": "beforeEach hook",
+                                                    "type": "step",
+                                                    "stepType": "hook",
+                                                    "duration": 16216,
+                                                    "location": "tests/editEmployee.spec.ts:14:10",
+                                                    "subs": [
+                                                        {
+                                                            "id": "7h4bxgdafouwo4owhkya",
+                                                            "title": "browser",
+                                                            "type": "step",
+                                                            "stepType": "fixture",
+                                                            "duration": 542,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "4sts3f79ya2tm8rkykwd",
+                                                                    "title": "Launch browser",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 533,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "6j66z4wvyq0sq8b7eeu7",
+                                                            "title": "Create context",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 29,
+                                                            "location": "tests/editEmployee.spec.ts:15:25"
+                                                        },
+                                                        {
+                                                            "id": "pi7wk03ab0qd42zl2get",
+                                                            "title": "Create page",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 587,
+                                                            "location": "tests/editEmployee.spec.ts:16:36"
+                                                        },
+                                                        {
+                                                            "id": "y7pfxmc7yvd5rb5lkkv4",
+                                                            "title": "Navigate to \"/web/index.php/auth/login\"",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 3474,
+                                                            "location": "utilities/playwright_utilities/goto.ts:9:20"
+                                                        },
+                                                        {
+                                                            "id": "k6ils6342jgyfi9pdwm0",
+                                                            "title": "Fill \"Admin\" getByPlaceholder('Username')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 402,
+                                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "ts0uu3qzjwp7tf3t1dug",
+                                                            "title": "Fill \"admin123\" getByPlaceholder('Password')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 119,
+                                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "arfx0mcfubwvgg08giv7",
+                                                            "title": "Click getByRole('button', { name: 'Login' })",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 1515,
+                                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "p1b84v2fvlngxex60zcl",
+                                                            "title": "Click getByRole('link', { name: 'PIM' })",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 1817,
+                                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "kyxhcw63kqdq09dtzj9k",
+                                                            "title": "Click getByRole('button', { name: ' Add' })",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 1024,
+                                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "82chw0uxljzv7gt5lkbp",
+                                                            "title": "Fill \"Blanche\" getByPlaceholder('First Name')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 355,
+                                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "xvy7flcw9416q1ksx6ez",
+                                                            "title": "Fill \"Hane\" getByPlaceholder('Last Name')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 26,
+                                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "1ntqojl6y9elwb6ix9g7",
+                                                            "title": "Fill \"176247836\" locator('xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 866,
+                                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "6b501h0v9u67dbsdn53s",
+                                                            "title": "Get input value locator('xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 23,
+                                                            "location": "utilities/playwright_utilities/getInputValue.ts:8:37"
+                                                        },
+                                                        {
+                                                            "id": "69pal1mnr9eoae01yk8v",
+                                                            "title": "Click getByRole('button', { name: 'Save' })",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 56,
+                                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "jzn7cfxotmqdbgzutqo8",
+                                                            "title": "toBeVisible",
+                                                            "type": "step",
+                                                            "stepType": "expect",
+                                                            "duration": 5280,
+                                                            "location": "utilities/playwright_utilities/assert.ts:6:31",
+                                                            "count": 2
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "t0u08rb221t7vab6433f",
+                                                    "title": "context",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 14,
+                                                    "location": "",
+                                                    "subs": [
+                                                        {
+                                                            "id": "a95nmzxwqxjdkiemc9mg",
+                                                            "title": "Create context",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 9,
+                                                            "location": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "bpedp0uxhnomdkpmgzxk",
+                                                    "title": "page",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 141,
+                                                    "location": "",
+                                                    "subs": [
+                                                        {
+                                                            "id": "2kxfcj6fnqp1dnpj5ux7",
+                                                            "title": "Create page",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 137,
+                                                            "location": ""
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "3u3fn34hfwairpq5kqlz",
+                                            "title": "Navigate to \"/web/index.php/auth/login\"",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 3106,
+                                            "location": "utilities/playwright_utilities/goto.ts:9:20"
+                                        },
+                                        {
+                                            "id": "d8pjf17zji58qfk60ng4",
+                                            "title": "Fill \"Admin\" getByPlaceholder('Username')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 384,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "blo8pdzzmfcu0yi12a2v",
+                                            "title": "Fill \"admin123\" getByPlaceholder('Password')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 17,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "6392v0a6x07qous9qe0y",
+                                            "title": "Click getByRole('button', { name: 'Login' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 1560,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "chlf86lo28e8bxwsdvga",
+                                            "title": "Click getByRole('link', { name: 'PIM' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 1564,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "e2o35ss22zo4ownu7lke",
+                                            "title": "Click getByRole('link', { name: 'Employee List' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 1471,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "pgno0wkn4vsec3z803ir",
+                                            "title": "Fill \"176247836\" getByRole('textbox').nth(2)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 349,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "x9tfgjfeuvdouc6nah9j",
+                                            "title": "Click getByRole('button', { name: 'Search' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 40,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "3j90oaavjlaufklfr3hd",
+                                            "title": "toBeVisible",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 903,
+                                            "location": "utilities/playwright_utilities/assert.ts:6:31"
+                                        },
+                                        {
+                                            "id": "0k3bvyiocafec0i295s0",
+                                            "title": "Click locator('.oxd-icon.bi-pencil-fill')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 551,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "e9k8xbk3orgcadmvlrpp",
+                                            "title": "toBeVisible",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 410,
+                                            "location": "utilities/playwright_utilities/assert.ts:6:31"
+                                        },
+                                        {
+                                            "id": "yrdiit5ksii8r61sjvav",
+                                            "title": "Click locator('form').filter({ hasText: 'Blood Type-- Select --' }).locator('i')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 890,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "7hi7hmy7abnktoa5insm",
+                                            "title": "Click getByRole('option', { name: 'A+' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 54,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "fre0069zpvmj7tv7pemj",
+                                            "title": "Click locator('form').filter({ hasText: 'Blood TypeA+Test_Field Save' }).getByRole('button')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 54,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "h2ak4itdzoahz02m4jzd",
+                                            "title": "After Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 576,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "dkg2vrgzv2otynlutl52",
+                                                    "title": "page",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 1,
+                                                    "location": ""
+                                                },
+                                                {
+                                                    "id": "6j5rcl73miwrlr1mdbiv",
+                                                    "title": "context",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 1,
+                                                    "location": ""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "attachments": [
+                                        {
+                                            "name": "trace",
+                                            "path": "attachments/0b85ce33f5d6e6315e3405856e2d3d576aa89dd6.zip",
+                                            "contentType": "application/zip",
+                                            "retry": 0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "location": "tests/editEmployee.spec.ts:13:6"
+                        }
+                    ],
+                    "location": "tests/editEmployee.spec.ts:0:0"
+                },
+                {
+                    "id": "d90e2d084e7b20152ba6",
+                    "title": "login.spec.ts",
+                    "type": "suite",
+                    "suiteType": "file",
+                    "caseNum": 1,
+                    "subs": [
+                        {
+                            "id": "e4de8d1272e43464920e",
+                            "title": "Login Test",
+                            "type": "suite",
+                            "suiteType": "describe",
+                            "caseNum": 1,
+                            "subs": [
+                                {
+                                    "id": "57467779e51917655d47",
+                                    "title": "Login to OrangeHRM",
+                                    "type": "case",
+                                    "caseType": "passed",
+                                    "ok": true,
+                                    "outcome": "expected",
+                                    "expectedStatus": "passed",
+                                    "location": "tests/login.spec.ts:5:9",
+                                    "logs": [
+                                        "✅ Navigated to OrangeHRM Login Page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n",
+                                        "✅ Filled Username Field with \"Admin\"\n",
+                                        "✅ Filled Password Field with \"admin123\"\n",
+                                        "✅ Clicked on Login Button\n",
+                                        "✅ Login Complete\n"
+                                    ],
+                                    "timestamps": [
+                                        1751570819721,
+                                        1751570826418
+                                    ],
+                                    "duration": 6697,
+                                    "tags": [],
+                                    "timeout": 10800000,
+                                    "retry": 0,
+                                    "status": "passed",
+                                    "stepNum": 15,
+                                    "stepFailed": 0,
+                                    "stepSubs": true,
+                                    "subs": [
+                                        {
+                                            "id": "sa959miw4b8199lquv6y",
+                                            "title": "Before Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 679,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "9ni8z5vapo15n7xd5vus",
+                                                    "title": "browser",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 270,
+                                                    "location": "",
+                                                    "subs": [
+                                                        {
+                                                            "id": "e7a59y3g4eih1bfcywi6",
+                                                            "title": "Launch browser",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 263,
+                                                            "location": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "or1ok80etrdq1rl4qivh",
+                                                    "title": "context",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 52,
+                                                    "location": "",
+                                                    "subs": [
+                                                        {
+                                                            "id": "35yhiqljogfymxotaao1",
+                                                            "title": "Create context",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 24,
+                                                            "location": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "fwutzcxc0555ymdax124",
+                                                    "title": "page",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 346,
+                                                    "location": "",
+                                                    "subs": [
+                                                        {
+                                                            "id": "h5td9vg4fwz9pqncrzi7",
+                                                            "title": "Create page",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 341,
+                                                            "location": ""
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "xis04kbyh7g12pih2fcb",
+                                            "title": "Navigate to \"/web/index.php/auth/login\"",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 3438,
+                                            "location": "utilities/playwright_utilities/goto.ts:9:20"
+                                        },
+                                        {
+                                            "id": "bkq2o8i7t9opdxqr8en0",
+                                            "title": "Fill \"Admin\" getByPlaceholder('Username')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 390,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "p64av84dsax1my6x2a9e",
+                                            "title": "Fill \"admin123\" getByPlaceholder('Password')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 18,
+                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                        },
+                                        {
+                                            "id": "8ozfwrrtoed90ye6gt50",
+                                            "title": "Click getByRole('button', { name: 'Login' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 162,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "krlgzd8epcvpmi7sj21c",
+                                            "title": "toHaveURL",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 1173,
+                                            "location": "tests/login.spec.ts:8:28"
+                                        },
+                                        {
+                                            "id": "18rp7x79ln555igc8x15",
+                                            "title": "After Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 444,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "ohyj28g9kpxbzthp6g01",
+                                                    "title": "page",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 0,
+                                                    "location": ""
+                                                },
+                                                {
+                                                    "id": "r0pw0bjivlkwvi9jv2x1",
+                                                    "title": "context",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 0,
+                                                    "location": ""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "attachments": [
+                                        {
+                                            "name": "trace",
+                                            "path": "attachments/4f7bb2df392531beaa1f741855b82bdd0d3e8537.zip",
+                                            "contentType": "application/zip",
+                                            "retry": 0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "location": "tests/login.spec.ts:4:6"
+                        }
+                    ],
+                    "location": "tests/login.spec.ts:0:0"
+                },
                 {
                     "id": "2889ebc841ec246e657c",
                     "title": "pagination.spec.ts",
@@ -282,7 +1613,7 @@
                                     "ok": true,
                                     "outcome": "expected",
                                     "expectedStatus": "passed",
-                                    "location": "tests/pagination.spec.ts:9:9",
+                                    "location": "tests/pagination.spec.ts:10:9",
                                     "logs": [
                                         "✅ Navigated to OrangeHRM Login Page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n",
                                         "✅ Filled Username Field with \"Admin\"\n",
@@ -291,210 +1622,83 @@
                                         "✅ Login Complete\n",
                                         "✅ Clicked on PIM Menu\n",
                                         "✅ Clicked on Employee List Menu\n",
-                                        "\u001b[31m❌ Right Arrow did not appear within 2000 ms locator.waitFor: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.oxd-icon.bi-chevron-right') to be visible\u001b[22m\n\n    at waitForElement \u001b[90m(F:\\AGT\\Automation\\AutomationLearning\\\u001b[39mutilities\\playwright_utilities\\waitForElement.ts:9:23\u001b[90m)\u001b[39m\n    at \u001b[90mF:\\AGT\\Automation\\AutomationLearning\\\u001b[39mtests\\pagination.spec.ts:29:33 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    stepId: \u001b[32m'pw:api@14'\u001b[39m,\n    location: {\n      file: \u001b[32m'F:\\\\AGT\\\\Automation\\\\AutomationLearning\\\\utilities\\\\playwright_utilities\\\\waitForElement.ts'\u001b[39m,\n      line: \u001b[33m9\u001b[39m,\n      column: \u001b[33m23\u001b[39m,\n      function: \u001b[32m'waitForElement'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('.oxd-icon.bi-chevron-right')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m'.oxd-icon.bi-chevron-right'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m2000\u001b[39m\n    },\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@14'\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1751557773109\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 2000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('.oxd-icon.bi-chevron-right') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 2000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('.oxd-icon.bi-chevron-right') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at waitForElement (F:\\\\AGT\\\\Automation\\\\AutomationLearning\\\\utilities\\\\playwright_utilities\\\\waitForElement.ts:9:23)\\n'\u001b[39m +\n        \u001b[32m'    at F:\\\\AGT\\\\Automation\\\\AutomationLearning\\\\tests\\\\pagination.spec.ts:29:33'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n\u001b[39m",
-                                        "❌ Right arrow not found. Will upload CSV.\n",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
-                                        "✅ CSV generated: F:\\AGT\\Automation\\AutomationLearning\\tests\\data\\EmployeeData.csv\n",
-                                        "✅ Uploaded file F:\\AGT\\Automation\\AutomationLearning\\tests\\data\\EmployeeData.csv to CSV File Input\n",
-                                        "📁 CSV file uploaded.\n",
-                                        "✅ Clicked on Upload Button\n",
-                                        "✅ Clicked on Confirmation OK Button\n",
-                                        "☑️ Upload confirmed.\n",
-                                        "✅ Clicked on Employee List Menu\n",
-                                        "✅ Page 2 Button after CSV upload appeared on the page.\n",
+                                        "✅ Right Arrow appeared on the page.\n",
+                                        "✅ Clicked on Right Arrow\n",
+                                        "✅ Page 2 Button appeared on the page.\n",
                                         "✅ Clicked on Page 2 Button\n",
-                                        "✅ Page 2 found and opened after CSV import.\n"
+                                        "🎯 Page 2 opened.\n"
                                     ],
                                     "timestamps": [
-                                        1751557762309,
-                                        1751557778091
+                                        1751570820020,
+                                        1751570832938
                                     ],
-                                    "duration": 15782,
+                                    "duration": 12918,
                                     "tags": [],
                                     "timeout": 10800000,
                                     "retry": 0,
                                     "status": "passed",
-                                    "stepNum": 24,
-                                    "stepFailed": 1,
+                                    "stepNum": 21,
+                                    "stepFailed": 0,
                                     "stepSubs": true,
                                     "subs": [
                                         {
-                                            "id": "zubh3ld7wwfsc8erxyij",
+                                            "id": "ni2atbmin5ha5hdjr6eu",
                                             "title": "Before Hooks",
                                             "type": "step",
                                             "stepType": "hook",
-                                            "duration": 462,
+                                            "duration": 1274,
                                             "location": "",
                                             "subs": [
                                                 {
-                                                    "id": "t7hptlpapt4pg7nsnt5z",
+                                                    "id": "l9mmfrfdnj9rbhjn8tqo",
                                                     "title": "browser",
                                                     "type": "step",
                                                     "stepType": "fixture",
-                                                    "duration": 202,
+                                                    "duration": 487,
                                                     "location": "",
                                                     "subs": [
                                                         {
-                                                            "id": "uswwcx02ffdvxtagg2cu",
+                                                            "id": "x6f2gv5s03bjeutqoikl",
                                                             "title": "Launch browser",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 197,
+                                                            "duration": 478,
                                                             "location": ""
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    "id": "whac5j2uxbigt5na7ab4",
+                                                    "id": "us9kbenrs2fpcbftdbza",
                                                     "title": "context",
                                                     "type": "step",
                                                     "stepType": "fixture",
-                                                    "duration": 23,
+                                                    "duration": 54,
                                                     "location": "",
                                                     "subs": [
                                                         {
-                                                            "id": "y3x7s85r0f4gvzxcrnyc",
+                                                            "id": "fuy2j9sd6b4up21jvj72",
                                                             "title": "Create context",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 14,
+                                                            "duration": 38,
                                                             "location": ""
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    "id": "jaso1gjbziytbl1rxd48",
+                                                    "id": "k5g18o79begnjeaa4hgz",
                                                     "title": "page",
                                                     "type": "step",
                                                     "stepType": "fixture",
-                                                    "duration": 230,
+                                                    "duration": 712,
                                                     "location": "",
                                                     "subs": [
                                                         {
-                                                            "id": "h6nmvi4vivlmve03ejwd",
+                                                            "id": "070w77eqtjpy41moxgte",
                                                             "title": "Create page",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 227,
+                                                            "duration": 709,
                                                             "location": ""
                                                         }
                                                     ]
@@ -502,139 +1706,111 @@
                                             ]
                                         },
                                         {
-                                            "id": "8mgua0rkrpaherdvf4be",
+                                            "id": "4nxkxusk4lifst6h3t11",
                                             "title": "Navigate to \"/web/index.php/auth/login\"",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 3479,
+                                            "duration": 3846,
                                             "location": "utilities/playwright_utilities/goto.ts:9:20"
                                         },
                                         {
-                                            "id": "c8l0s4d8jojirugmgxye",
+                                            "id": "k1luuic5tv0quher66eg",
                                             "title": "Fill \"Admin\" getByPlaceholder('Username')",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 403,
+                                            "duration": 383,
                                             "location": "utilities/playwright_utilities/fill.ts:9:23"
                                         },
                                         {
-                                            "id": "1u3jyjai13bitxwmqor2",
+                                            "id": "e3yex6amlwl6w1bbkcav",
                                             "title": "Fill \"admin123\" getByPlaceholder('Password')",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 17,
+                                            "duration": 31,
                                             "location": "utilities/playwright_utilities/fill.ts:9:23"
                                         },
                                         {
-                                            "id": "f2dl8f3evticxn6imuz7",
+                                            "id": "qd18kaced66cm85xri09",
                                             "title": "Click getByRole('button', { name: 'Login' })",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 1362,
+                                            "duration": 1633,
                                             "location": "utilities/playwright_utilities/click.ts:9:23"
                                         },
                                         {
-                                            "id": "yufr6tr4pxpcy38umqc6",
+                                            "id": "fakq6y36w32psxhsn773",
                                             "title": "Click getByRole('link', { name: 'PIM' })",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 1827,
+                                            "duration": 2029,
                                             "location": "utilities/playwright_utilities/click.ts:9:23"
                                         },
                                         {
-                                            "id": "b3klrx5exf3s3wgtjx21",
+                                            "id": "3ivedshll0hx6y0rh6b5",
                                             "title": "Click getByRole('link', { name: 'Employee List' })",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 1192,
+                                            "duration": 1249,
                                             "location": "utilities/playwright_utilities/click.ts:9:23"
                                         },
                                         {
-                                            "id": "6v8vl9eow7z4fv02ehz0",
+                                            "id": "0zc6e605oqv6oebfqiar",
                                             "title": "Wait for selector locator('.oxd-icon.bi-chevron-right')",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 2040,
-                                            "location": "utilities/playwright_utilities/waitForElement.ts:9:23",
-                                            "errors": [
-                                                "TimeoutError: locator.waitFor: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.oxd-icon.bi-chevron-right') to be visible\u001b[22m\n\n\n\u001b[0m \u001b[90m 7 |\u001b[39m ) {\n \u001b[90m 8 |\u001b[39m     \u001b[36mtry\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 9 |\u001b[39m         \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ timeout })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\n    at waitForElement (F:\\AGT\\Automation\\AutomationLearning\\utilities\\playwright_utilities\\waitForElement.ts:9:23)\n    at F:\\AGT\\Automation\\AutomationLearning\\tests\\pagination.spec.ts:29:33"
-                                            ],
-                                            "errorNum": 1
-                                        },
-                                        {
-                                            "id": "bma02vh2tbievpx1gpuu",
-                                            "title": "Navigate to \"/web/index.php/pim/pimCsvImport\"",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 535,
-                                            "location": "tests/pagination.spec.ts:51:24"
-                                        },
-                                        {
-                                            "id": "qvvdhmqua9c062kfu4se",
-                                            "title": "Set input files locator('input[type=\"file\"]')",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 301,
-                                            "location": "utilities/playwright_utilities/upload.ts:11:9"
-                                        },
-                                        {
-                                            "id": "mvz4om2dbvvquht3gg6m",
-                                            "title": "Click getByRole('button', { name: 'Upload' })",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 35,
-                                            "location": "utilities/playwright_utilities/click.ts:9:23"
-                                        },
-                                        {
-                                            "id": "r94v75lsmfe4e3cvq587",
-                                            "title": "Click getByRole('button', { name: 'Ok' })",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 1365,
-                                            "location": "utilities/playwright_utilities/click.ts:9:23"
-                                        },
-                                        {
-                                            "id": "piq20jmzs0sqdhl7h5jq",
-                                            "title": "Click getByRole('link', { name: 'Employee List' })",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 518,
-                                            "location": "utilities/playwright_utilities/click.ts:9:23"
-                                        },
-                                        {
-                                            "id": "oy4oag53mds4xhfg0huf",
-                                            "title": "Wait for selector getByRole('button', { name: '2' })",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 1404,
+                                            "duration": 1405,
                                             "location": "utilities/playwright_utilities/waitForElement.ts:9:23"
                                         },
                                         {
-                                            "id": "ejgljwtzkkfk5klx62xv",
-                                            "title": "Click getByRole('button', { name: '2' })",
+                                            "id": "kkl2wquorx64bjmbftyc",
+                                            "title": "Is visible locator('.oxd-icon.bi-chevron-right')",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 60,
+                                            "duration": 25,
+                                            "location": "tests/pagination.spec.ts:33:34"
+                                        },
+                                        {
+                                            "id": "oowao9ij9jwyadm0bqt6",
+                                            "title": "Click locator('.oxd-icon.bi-chevron-right')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 71,
                                             "location": "utilities/playwright_utilities/click.ts:9:23"
                                         },
                                         {
-                                            "id": "mhdiwwk30v9pdipwju7q",
+                                            "id": "6y79b20gyt332y154a38",
+                                            "title": "Wait for selector getByRole('button', { name: '2' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 18,
+                                            "location": "utilities/playwright_utilities/waitForElement.ts:9:23"
+                                        },
+                                        {
+                                            "id": "hq8t06h741p6eenszhk8",
+                                            "title": "Click getByRole('button', { name: '2' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 50,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "xido11guaj2qf5fmae5d",
                                             "title": "After Hooks",
                                             "type": "step",
                                             "stepType": "hook",
-                                            "duration": 418,
+                                            "duration": 416,
                                             "location": "",
                                             "subs": [
                                                 {
-                                                    "id": "cley947kk398wp838e4h",
+                                                    "id": "zw4x57lpcfp44jkelw2c",
                                                     "title": "page",
                                                     "type": "step",
                                                     "stepType": "fixture",
-                                                    "duration": 0,
+                                                    "duration": 1,
                                                     "location": ""
                                                 },
                                                 {
-                                                    "id": "pkyzn34vyrwkg4yj8jc6",
+                                                    "id": "9jw0jba7umclsdorjemk",
                                                     "title": "context",
                                                     "type": "step",
                                                     "stepType": "fixture",
@@ -654,7 +1830,7 @@
                                     ]
                                 }
                             ],
-                            "location": "tests/pagination.spec.ts:8:6"
+                            "location": "tests/pagination.spec.ts:9:6"
                         }
                     ],
                     "location": "tests/pagination.spec.ts:0:0"
@@ -682,7 +1858,7 @@
     "summary": {
         "tests": {
             "name": "Tests",
-            "value": 1,
+            "value": 5,
             "nav": true,
             "id": "tests"
         },
@@ -712,7 +1888,7 @@
         },
         "passed": {
             "name": "Passed",
-            "value": 1,
+            "value": 5,
             "color": "green",
             "nav": true,
             "id": "passed",
@@ -720,12 +1896,12 @@
         },
         "steps": {
             "name": "Steps",
-            "value": 24,
+            "value": 133,
             "id": "steps"
         },
         "suites": {
             "name": "Suites",
-            "value": 1,
+            "value": 5,
             "id": "suites"
         },
         "projects": {
@@ -737,13 +1913,13 @@
         "files": {
             "name": "Files",
             "description": "Suite type is file",
-            "value": 1,
+            "value": 5,
             "id": "files"
         },
         "describes": {
             "name": "Describes",
             "description": "Suite type is describe",
-            "value": 1,
+            "value": 5,
             "id": "describes"
         },
         "shards": {
@@ -755,7 +1931,7 @@
         "errors": {
             "name": "Errors",
             "icon": "error",
-            "value": 1,
+            "value": 0,
             "id": "errors"
         },
         "retries": {
@@ -767,13 +1943,13 @@
         "logs": {
             "name": "Logs",
             "icon": "log",
-            "value": 139,
+            "value": 102,
             "id": "logs"
         },
         "attachments": {
             "name": "Attachments",
             "icon": "attachment",
-            "value": 1,
+            "value": 5,
             "id": "attachments"
         },
         "artifacts": {
@@ -786,7 +1962,7 @@
         "width": 360,
         "height": 150,
         "margin": 10,
-        "svg": "<svg viewBox=\"0 0 360 150\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-failed\"><path d=\"\" fill=\"#d00\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-passed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"green\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 15)\"><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"#d00\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 30)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"orange\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 60)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"gray\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 90)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"green\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g></g></svg>"
+        "svg": "<svg viewBox=\"0 0 360 150\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-failed\"><path d=\"\" fill=\"#d00\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-passed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"green\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 15)\"><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"#d00\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 30)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"orange\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 60)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"gray\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 90)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"green\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">5</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g></g></svg>"
     },
     "htmlPath": "monocart-report/index.html"
 }

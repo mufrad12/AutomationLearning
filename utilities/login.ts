@@ -2,6 +2,7 @@ import { Page } from "@playwright/test";
 import { navigateTo } from "./playwright_utilities/goto";
 import { fillInput } from "./playwright_utilities/fill";
 import { clickElement } from "./playwright_utilities/click";
+import { LoginPage } from "page_objects/LoginPage";
 
 export async function login(page: Page) {
     await navigateTo(
@@ -10,13 +11,11 @@ export async function login(page: Page) {
         "OrangeHRM Login Page",
     );
 
-    const usernameField = page.getByPlaceholder("Username");
-    const passwordField = page.getByPlaceholder("Password");
-    const loginButton = page.getByRole("button", { name: "Login" });
+    const loginPage = new LoginPage(page);
 
-    await fillInput(usernameField, "Admin", "Username Field");
-    await fillInput(passwordField, "admin123", "Password Field");
-    await clickElement(loginButton, page, "Login Button");
+    await fillInput(loginPage.getUsernameField(), "Admin", "Username Field");
+    await fillInput(loginPage.getPasswordField(), "admin123", "Password Field");
+    await clickElement(loginPage.getLoginButton(), page, "Login Button");
 
     console.log("✅ Login Complete");
 }

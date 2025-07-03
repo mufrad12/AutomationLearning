@@ -7,6 +7,7 @@ import { clickElement } from "./playwright_utilities/click";
 import { getInputValue } from "./playwright_utilities/getInputValue";
 import { assertVisible } from "./playwright_utilities/assert";
 import { writeJsonFile } from "./playwright_utilities/fileUtils";
+import { EmployeePage } from "page_objects/EmployeePage";
 
 export async function createEmployee(
     page: Page,
@@ -18,33 +19,29 @@ export async function createEmployee(
     const empId = generate9DigitId();
     console.log("🔢 Unique Employee ID:", empId);
 
+    const employeePage = new EmployeePage(page);
+
     // 2) Navigate to Add Employee page
+    await clickElement(employeePage.getPimMenu(), page, "PIM Menu");
     await clickElement(
-        page.getByRole("link", { name: "PIM" }),
-        page,
-        "PIM Menu",
-    );
-    await clickElement(
-        page.getByRole("button", { name: " Add" }),
+        employeePage.getAddButton(),
         page,
         "Add Employee Button",
     );
 
     // 3) Fill form fields
     await fillInput(
-        page.getByPlaceholder("First Name"),
+        employeePage.getFirstNameInput(),
         firstName,
         "First Name Field",
     );
     await fillInput(
-        page.getByPlaceholder("Last Name"),
+        employeePage.getLastNameInput(),
         lastName,
         "Last Name Field",
     );
 
-    const empIdField = page.locator(
-        "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input",
-    );
+    const empIdField = employeePage.getEmployeeIdInput();
     await fillInput(empIdField, empId, "Employee ID Field");
 
     // 4) Get the actual value of Employee ID
@@ -56,11 +53,7 @@ export async function createEmployee(
     writeJsonFile(filePath, { employeeId });
 
     // 6) Save the form and assert
-    await clickElement(
-        page.getByRole("button", { name: "Save" }),
-        page,
-        "Save Button",
-    );
+    await clickElement(employeePage.getSaveButton(), page, "Save Button");
     await assertVisible(
         page.getByText("Contact Details"),
         "Contact Details Section",
