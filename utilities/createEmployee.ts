@@ -9,6 +9,20 @@ import { assertVisible } from "./playwright_utilities/assert";
 import { writeJsonFile } from "./playwright_utilities/fileUtils";
 import { EmployeePage } from "page_objects/EmployeePage";
 
+/**
+ * Creates a new employee in the application.
+ *
+ * Workflow:
+ * 1. Generates random first name, last name, and a unique 9-digit employee ID.
+ * 2. Navigates to the "Add Employee" page.
+ * 3. Fills in the employee form fields (first name, last name, employee ID).
+ * 4. Saves the form and verifies that the employee was added successfully.
+ * 5. Writes the created employee ID to a JSON file for later use.
+ *
+ * @param {Page} page - The Playwright page object representing the browser page.
+ * @param {string} jsonFilename - The JSON filename where the employee ID will be saved (e.g., "create_employee.json").
+ * @returns {Promise<string>} The newly created employee's ID.
+ */
 export async function createEmployee(
     page: Page,
     jsonFilename: string,
@@ -40,7 +54,6 @@ export async function createEmployee(
         lastName,
         "Last Name Field",
     );
-
     const empIdField = employeePage.getEmployeeIdInput();
     await fillInput(empIdField, empId, "Employee ID Field");
 

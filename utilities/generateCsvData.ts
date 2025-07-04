@@ -1,8 +1,20 @@
 import fs from "fs";
 import path from "path";
 import { faker } from "@faker-js/faker";
-import { generate9DigitId } from "./generateEmpID"; // Make sure this exists
+import { generate9DigitId } from "./generateEmpID";
 
+/**
+ * Generates a CSV file containing employee data.
+ *
+ * Each row includes a first name, last name, and a unique 9-digit employee ID,
+ * along with other empty fields matching the required CSV structure.
+ * By default, it creates 60 employee records.
+ *
+ * The generated CSV file will be saved in the `tests/data/` directory.
+ *
+ * @param {string} [filename="EmployeeData.csv"] - The name of the generated CSV file.
+ * @returns {string} The full file path of the generated CSV file.
+ */
 export function generateEmployeeCsvFile(filename: string = "EmployeeData.csv") {
     const headers = [
         "first_name",
