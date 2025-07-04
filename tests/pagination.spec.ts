@@ -7,11 +7,14 @@ import { waitForElement } from "../utilities/playwright_utilities/waitForElement
 import { CsvImportPage } from "page_objects/CsvImportPage";
 
 test.describe("Pagination via CSV Upload", () => {
+    // 🔑 Login before every test
+    test.beforeEach(async ({ page }) => {
+        await login(page);
+    });
+
     test("Upload CSV if no pagination arrow, then verify page 2", async ({
         page,
     }) => {
-        await login(page);
-
         // Go to Employee List
         await clickElement(
             page.getByRole("link", { name: "PIM" }),
