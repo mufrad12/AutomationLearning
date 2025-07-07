@@ -4,7 +4,7 @@ import { generateEmployeeCsvFile } from "../utilities/generateCsvData";
 import { clickElement } from "../utilities/playwright_utilities/click";
 import { uploadFile } from "../utilities/playwright_utilities/upload";
 import { waitForElement } from "../utilities/playwright_utilities/waitForElement";
-import { CsvImportPage } from "page_objects/CsvImportPage";
+import { CsvImportPage } from "../page_objects/CsvImportPage";
 
 test.describe("Pagination via CSV Upload", () => {
     // 🔑 Login before every test
