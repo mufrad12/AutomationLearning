@@ -7,7 +7,7 @@ import { clickElement } from "./playwright_utilities/click";
 import { getInputValue } from "./playwright_utilities/getInputValue";
 import { assertVisible } from "./playwright_utilities/assert";
 import { writeJsonFile } from "./playwright_utilities/fileUtils";
-import { EmployeePage } from "page_objects/EmployeePage";
+import { EmployeePage } from "../page_objects/EmployeePage";
 
 /**
  * Creates a new employee in the application.

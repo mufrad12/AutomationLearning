@@ -2,7 +2,7 @@ import { Page } from "@playwright/test";
 import { clickElement } from "./playwright_utilities/click";
 import { fillInput } from "./playwright_utilities/fill";
 import { assertVisible } from "./playwright_utilities/assert";
-import { EmployeePage } from "page_objects/EmployeePage";
+import { EmployeePage } from "../page_objects/EmployeePage";
 
 /**
  * Searches for an employee by their employee ID and navigates to the edit page.

@@ -2,7 +2,7 @@ import { Page } from "@playwright/test";
 import { navigateTo } from "./playwright_utilities/goto";
 import { fillInput } from "./playwright_utilities/fill";
 import { clickElement } from "./playwright_utilities/click";
-import { LoginPage } from "page_objects/LoginPage";
+import { LoginPage } from "../page_objects/LoginPage";
 
 /**
  * Logs into the OrangeHRM demo application using default admin credentials.
