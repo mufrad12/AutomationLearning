@@ -3,9 +3,9 @@ name: Playwright Tests
 on:
     workflow_dispatch: # 👈 This enables manual run from GitHub UI
     push:
-        branches: [main]
+        branches: [run-github-actions]
     pull_request:
-        branches: [main]
+        branches: [run-github-actions]
 
 jobs:
     test:
