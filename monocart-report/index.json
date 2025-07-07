@@ -1,0 +1,620 @@
+{
+    "name": "Test Report",
+    "logo": null,
+    "date": 1751636410852,
+    "dateH": "7/4/2025, 7:40:10 PM",
+    "duration": 12554,
+    "durationH": "12.6s",
+    "cwd": "F:/AGT/Automation/AutomationLearning",
+    "outputFile": "F:\\AGT\\Automation\\AutomationLearning\\monocart-report\\index.html",
+    "outputDir": "F:\\AGT\\Automation\\AutomationLearning\\monocart-report",
+    "metadata": {
+        "actualWorkers": 1
+    },
+    "system": {
+        "cpu": {
+            "color": "#117DBB",
+            "count": 12,
+            "model": "Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz",
+            "speed": 2904
+        },
+        "mem": {
+            "color": "#8B12AE",
+            "total": 17104015360
+        },
+        "arch": "x64",
+        "platform": "win32",
+        "release": "10.0.26100",
+        "type": "Windows_NT",
+        "version": "Windows 11 Pro",
+        "uptime": 102353.89,
+        "hostname": "Mufrad",
+        "pid": 14688,
+        "node": "22.14.0",
+        "v8": "12.4.254.21-node.22",
+        "timestampStart": 1751636410852,
+        "ticks": [
+            {
+                "cpu": {
+                    "percent": 13.82
+                },
+                "mem": {
+                    "free": 3920703488
+                },
+                "timestamp": 1751636412875
+            },
+            {
+                "cpu": {
+                    "percent": 10.52
+                },
+                "mem": {
+                    "free": 3820011520
+                },
+                "timestamp": 1751636414886
+            },
+            {
+                "cpu": {
+                    "percent": 27.46
+                },
+                "mem": {
+                    "free": 3720904704
+                },
+                "timestamp": 1751636416891
+            },
+            {
+                "cpu": {
+                    "percent": 23.68
+                },
+                "mem": {
+                    "free": 3656257536
+                },
+                "timestamp": 1751636418899
+            },
+            {
+                "cpu": {
+                    "percent": 20.82
+                },
+                "mem": {
+                    "free": 3563667456
+                },
+                "timestamp": 1751636420910
+            },
+            {
+                "cpu": {
+                    "percent": 41.92
+                },
+                "mem": {
+                    "free": 3867688960
+                },
+                "timestamp": 1751636422917
+            },
+            {
+                "cpu": {
+                    "percent": 21.28
+                },
+                "mem": {
+                    "free": 3865931776
+                },
+                "timestamp": 1751636423403
+            }
+        ],
+        "workers": 6,
+        "jobs": [
+            {
+                "caseId": "ca64c6efdfeb8cbd4820",
+                "parallelIndex": 0,
+                "workerIndex": 0,
+                "timestamp": 1751636412930,
+                "duration": 9198
+            }
+        ],
+        "cwd": "F:/AGT/Automation/AutomationLearning",
+        "configFile": "playwright.config.ts",
+        "playwright": "1.53.0",
+        "monocart": "2.9.13",
+        "testDir": "tests",
+        "outputFile": "monocart-report/index.html",
+        "outputDir": "monocart-report",
+        "timestampEnd": 1751636423406
+    },
+    "artifacts": [],
+    "trends": [],
+    "columns": [
+        {
+            "id": "caseType",
+            "name": "",
+            "width": 36,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconCaseType",
+            "detailed": false
+        },
+        {
+            "id": "title",
+            "name": "Title",
+            "searchable": true,
+            "width": 350,
+            "maxWidth": 1230,
+            "detailed": false
+        },
+        {
+            "id": "type",
+            "name": "Type",
+            "width": 50,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconType",
+            "detailed": false
+        },
+        {
+            "id": "duration",
+            "name": "Duration",
+            "align": "right",
+            "sortAsc": false,
+            "formatter": "duration",
+            "detailed": false
+        },
+        {
+            "id": "errors",
+            "name": "Errors",
+            "width": 60,
+            "align": "center",
+            "comparer": "errors",
+            "formatter": "errors",
+            "detailed": false
+        },
+        {
+            "id": "logs",
+            "name": "Logs",
+            "width": 60,
+            "align": "center",
+            "comparer": "logs",
+            "formatter": "logs",
+            "detailed": false
+        },
+        {
+            "id": "annotations",
+            "name": "Annotations",
+            "width": 100,
+            "markdown": true,
+            "searchable": true,
+            "comparer": "annotations",
+            "formatter": "annotations",
+            "detailed": false
+        },
+        {
+            "id": "attachments",
+            "name": "Attachments",
+            "width": 100,
+            "align": "center",
+            "formatter": "attachments",
+            "detailed": false
+        },
+        {
+            "id": "status",
+            "name": "Status",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "expectedStatus",
+            "name": "Expected",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "outcome",
+            "name": "Outcome",
+            "align": "center",
+            "width": 85,
+            "detailed": false
+        },
+        {
+            "id": "retry",
+            "name": "Retry",
+            "align": "center",
+            "width": 50,
+            "detailed": false
+        },
+        {
+            "id": "location",
+            "name": "Location",
+            "classMap": "mcr-location",
+            "width": 200,
+            "maxWidth": 1981,
+            "detailed": false
+        }
+    ],
+    "rows": [
+        {
+            "id": "252c5186032776190fb4",
+            "title": "chromium",
+            "type": "suite",
+            "suiteType": "project",
+            "caseNum": 1,
+            "subs": [
+                {
+                    "id": "2889ebc841ec246e657c",
+                    "title": "pagination.spec.ts",
+                    "type": "suite",
+                    "suiteType": "file",
+                    "caseNum": 1,
+                    "subs": [
+                        {
+                            "id": "a940178bd0b568d15be8",
+                            "title": "Pagination via CSV Upload",
+                            "type": "suite",
+                            "suiteType": "describe",
+                            "caseNum": 1,
+                            "subs": [
+                                {
+                                    "id": "ca64c6efdfeb8cbd4820",
+                                    "title": "Upload CSV if no pagination arrow, then verify page 2",
+                                    "type": "case",
+                                    "caseType": "passed",
+                                    "ok": true,
+                                    "outcome": "expected",
+                                    "expectedStatus": "passed",
+                                    "location": "tests/pagination.spec.ts:15:9",
+                                    "logs": [
+                                        "✅ Navigated to OrangeHRM Login Page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n",
+                                        "✅ Filled Username Field with \"Admin\"\n",
+                                        "✅ Filled Password Field with \"admin123\"\n",
+                                        "✅ Clicked on Login Button\n",
+                                        "✅ Login Complete\n",
+                                        "✅ Clicked on PIM Menu\n",
+                                        "✅ Clicked on Employee List Menu\n",
+                                        "✅ Right Arrow appeared on the page.\n",
+                                        "✅ Clicked on Right Arrow\n",
+                                        "✅ Page 2 Button appeared on the page.\n",
+                                        "✅ Clicked on Page 2 Button\n",
+                                        "🎯 Page 2 opened.\n"
+                                    ],
+                                    "timestamps": [
+                                        1751636412930,
+                                        1751636422128
+                                    ],
+                                    "duration": 9198,
+                                    "tags": [],
+                                    "timeout": 10800000,
+                                    "retry": 0,
+                                    "status": "passed",
+                                    "stepNum": 22,
+                                    "stepFailed": 0,
+                                    "stepSubs": true,
+                                    "subs": [
+                                        {
+                                            "id": "1mofr06p7eesi1lvhlnn",
+                                            "title": "Before Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 4067,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "7uah7gu9uyubneo2u4kk",
+                                                    "title": "beforeEach hook",
+                                                    "type": "step",
+                                                    "stepType": "hook",
+                                                    "duration": 4066,
+                                                    "location": "tests/pagination.spec.ts:11:10",
+                                                    "subs": [
+                                                        {
+                                                            "id": "4215xngyakvw3s1de9ax",
+                                                            "title": "browser",
+                                                            "type": "step",
+                                                            "stepType": "fixture",
+                                                            "duration": 184,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "zdt7wklmi408swuvcyo1",
+                                                                    "title": "Launch browser",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 180,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "n5mtjc93urcrso8wi0lg",
+                                                            "title": "context",
+                                                            "type": "step",
+                                                            "stepType": "fixture",
+                                                            "duration": 24,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "z4v6rjjhsrxkraqk8pnd",
+                                                                    "title": "Create context",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 14,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "mcmud70o34ajoomllhmg",
+                                                            "title": "page",
+                                                            "type": "step",
+                                                            "stepType": "fixture",
+                                                            "duration": 196,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "zkdlnidwtiq1wkvmcnbs",
+                                                                    "title": "Create page",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 194,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "kgxims5goejan7zt69u1",
+                                                            "title": "Navigate to \"/web/index.php/auth/login\"",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 3089,
+                                                            "location": "utilities/playwright_utilities/goto.ts:9:20"
+                                                        },
+                                                        {
+                                                            "id": "5ugc5fo76af5zm2sl5aw",
+                                                            "title": "Fill \"Admin\" getByPlaceholder('Username')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 383,
+                                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "hnmlr7lwosp7agkmgdi7",
+                                                            "title": "Fill \"admin123\" getByPlaceholder('Password')",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 25,
+                                                            "location": "utilities/playwright_utilities/fill.ts:9:23"
+                                                        },
+                                                        {
+                                                            "id": "3f6t0klulmxfrui4ilbm",
+                                                            "title": "Click getByRole('button', { name: 'Login' })",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 143,
+                                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "k3g4flsr2kp398glgm6s",
+                                            "title": "Click getByRole('link', { name: 'PIM' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 2619,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "cufo7ej4txy9dhd8zswp",
+                                            "title": "Click getByRole('link', { name: 'Employee List' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 900,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "zqnrum6rftyy4k7ebink",
+                                            "title": "Wait for selector locator('.oxd-icon.bi-chevron-right')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 1022,
+                                            "location": "utilities/playwright_utilities/waitForElement.ts:9:23"
+                                        },
+                                        {
+                                            "id": "vna4yw90wslyi6e9u551",
+                                            "title": "Is visible locator('.oxd-icon.bi-chevron-right')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 21,
+                                            "location": "tests/pagination.spec.ts:36:34"
+                                        },
+                                        {
+                                            "id": "45pyj4kvodkk3eee3ibq",
+                                            "title": "Click locator('.oxd-icon.bi-chevron-right')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 66,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "8uwh0ww22pxklbpsx85l",
+                                            "title": "Wait for selector getByRole('button', { name: '2' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 12,
+                                            "location": "utilities/playwright_utilities/waitForElement.ts:9:23"
+                                        },
+                                        {
+                                            "id": "ojtr1j5vx3ruoizvfqhi",
+                                            "title": "Click getByRole('button', { name: '2' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 31,
+                                            "location": "utilities/playwright_utilities/click.ts:9:23"
+                                        },
+                                        {
+                                            "id": "3cat6m62vp8nkhx6vsod",
+                                            "title": "After Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 245,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "apdljg19bx6jy3s19eao",
+                                                    "title": "page",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 0,
+                                                    "location": ""
+                                                },
+                                                {
+                                                    "id": "x36juu7un3le568lge85",
+                                                    "title": "context",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 0,
+                                                    "location": ""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "attachments": [
+                                        {
+                                            "name": "trace",
+                                            "path": "attachments/7fde6d7d1267a822708fe3de6b882b2404d105fd.zip",
+                                            "contentType": "application/zip",
+                                            "retry": 0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "location": "tests/pagination.spec.ts:9:6"
+                        }
+                    ],
+                    "location": "tests/pagination.spec.ts:0:0"
+                }
+            ]
+        }
+    ],
+    "formatters": {},
+    "suiteTypes": [
+        "project",
+        "file",
+        "describe",
+        "shard"
+    ],
+    "caseTypes": [
+        "failed",
+        "flaky",
+        "skipped",
+        "passed"
+    ],
+    "traceViewerUrl": "https://trace.playwright.dev/?trace={traceUrl}",
+    "mermaid": null,
+    "groupOptions": null,
+    "tags": {},
+    "summary": {
+        "tests": {
+            "name": "Tests",
+            "value": 1,
+            "nav": true,
+            "id": "tests"
+        },
+        "failed": {
+            "name": "Failed",
+            "value": 0,
+            "color": "#d00",
+            "nav": true,
+            "id": "failed",
+            "percent": "0.0%"
+        },
+        "flaky": {
+            "name": "Flaky",
+            "value": 0,
+            "color": "orange",
+            "nav": true,
+            "id": "flaky",
+            "percent": "0.0%"
+        },
+        "skipped": {
+            "name": "Skipped",
+            "value": 0,
+            "color": "gray",
+            "nav": true,
+            "id": "skipped",
+            "percent": "0.0%"
+        },
+        "passed": {
+            "name": "Passed",
+            "value": 1,
+            "color": "green",
+            "nav": true,
+            "id": "passed",
+            "percent": "100.0%"
+        },
+        "steps": {
+            "name": "Steps",
+            "value": 22,
+            "id": "steps"
+        },
+        "suites": {
+            "name": "Suites",
+            "value": 1,
+            "id": "suites"
+        },
+        "projects": {
+            "name": "Projects",
+            "description": "Suite type is project",
+            "value": 1,
+            "id": "projects"
+        },
+        "files": {
+            "name": "Files",
+            "description": "Suite type is file",
+            "value": 1,
+            "id": "files"
+        },
+        "describes": {
+            "name": "Describes",
+            "description": "Suite type is describe",
+            "value": 1,
+            "id": "describes"
+        },
+        "shards": {
+            "name": "Shards",
+            "description": "Suite type is shard (only in shading mode)",
+            "value": 0,
+            "id": "shards"
+        },
+        "errors": {
+            "name": "Errors",
+            "icon": "error",
+            "value": 0,
+            "id": "errors"
+        },
+        "retries": {
+            "name": "Retries",
+            "icon": "retry",
+            "value": 0,
+            "id": "retries"
+        },
+        "logs": {
+            "name": "Logs",
+            "icon": "log",
+            "value": 12,
+            "id": "logs"
+        },
+        "attachments": {
+            "name": "Attachments",
+            "icon": "attachment",
+            "value": 1,
+            "id": "attachments"
+        },
+        "artifacts": {
+            "name": "Artifacts",
+            "value": 0
+        }
+    },
+    "pieChart": {
+        "ns": "mcr-pie",
+        "width": 360,
+        "height": 150,
+        "margin": 10,
+        "svg": "<svg viewBox=\"0 0 360 150\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-failed\"><path d=\"\" fill=\"#d00\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-passed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"green\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 15)\"><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"#d00\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 30)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"orange\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 60)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"gray\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 90)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"green\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g></g></svg>"
+    },
+    "htmlPath": "monocart-report/index.html"
+}
