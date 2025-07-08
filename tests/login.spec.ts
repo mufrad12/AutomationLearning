@@ -7,10 +7,13 @@ test.describe("Login Test", () => {
 
         await expect.soft(page).toHaveURL(/dashboard/); // Adjust based on actual landing page
     });
+<<<<<<< Updated upstream
+=======
 
     // test("Login to OrangeHRM with Login Fixture", async ({ page }) => {
     //     //await login(page);
 
-    //     await expect.soft(page).toHaveURL(/dashboard/); // Adjust based on actual landing page
-    // });
+        await expect.soft(page).toHaveURL(/dashboard/); // Adjust based on actual landing page
+    });
+>>>>>>> Stashed changes
 });
