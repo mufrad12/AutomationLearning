@@ -1,6 +1,6 @@
-import { test } from "@playwright/test";
+import { test, Page } from "@playwright/test";
 import path from "path";
-import { login } from "../utilities/login";
+import { loginWithSession } from "../utilities/loginWithSession";
 import { createEmployee } from "../utilities/createEmployee";
 import { searchEmployeeByIdAndDelete } from "../utilities/searchEmployeeActions";
 import {
@@ -17,19 +17,18 @@ const deleteFilePath = path.resolve(
 );
 
 test.describe("Delete Employee", () => {
+    let page: Page;
+
     test.beforeEach(async ({ browser }) => {
-        const context = await browser.newContext();
-        const page = await context.newPage();
-        await login(page);
+        // 🔥 Get a fully logged-in page using your existing function
+        page = await loginWithSession(browser);
 
         // Create a fresh employee and write to JSON
         await createEmployee(page, jsonFilename);
     });
 
-    test("Should delete employee using saved ID and clear the file", async ({
-        page,
-    }) => {
-        await login(page);
+    test("Should delete employee using saved ID and clear the file", async () => {
+        // 🔥 No need to call login again — already logged in from beforeEach
 
         // Read employeeId from JSON
         const employeeData = readJsonFile(deleteFilePath);

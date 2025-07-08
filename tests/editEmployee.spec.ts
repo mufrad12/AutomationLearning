@@ -1,6 +1,6 @@
-import { test } from "@playwright/test";
+import { test, Page } from "@playwright/test";
 import path from "path";
-import { login } from "../utilities/login";
+import { loginWithSession } from "../utilities/loginWithSession";
 import { createEmployee } from "../utilities/createEmployee";
 import { searchEmployeeByIdAndEdit } from "../utilities/searchEmployeeActions";
 import { readJsonFile } from "../utilities/playwright_utilities/fileUtils";
@@ -11,17 +11,18 @@ const jsonFilename = "edit_employee.json";
 const editFilePath = path.resolve(process.cwd(), "tests", "data", jsonFilename);
 
 test.describe("Edit Employee", () => {
+    let page: Page;
+
     test.beforeEach(async ({ browser }) => {
-        const context = await browser.newContext();
-        const page = await context.newPage();
-        await login(page);
+        // 🔥 Use loginWithSession
+        page = await loginWithSession(browser);
 
         // Create a fresh employee and save to JSON
         await createEmployee(page, jsonFilename);
     });
 
-    test("Should edit the employee using saved ID", async ({ page }) => {
-        await login(page);
+    test("Should edit the employee using saved ID", async () => {
+        // ✅ Already logged in from beforeEach
 
         // Read employeeId from JSON
         const employeeData = readJsonFile(editFilePath);

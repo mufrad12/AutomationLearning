@@ -1,16 +1,28 @@
+// tests/login.spec.ts
+
 import { test, expect } from "@playwright/test";
-import { login } from "../utilities/login";
+import { getAuthenticatedPage } from "../utilities/authManager";
 
-test.describe("Login Test", () => {
-    test("Login to OrangeHRM", async ({ page }) => {
-        await login(page);
+test.describe("Login with Persistent Auth", () => {
+    test("Should open dashboard using saved session or login", async ({
+        browser,
+    }) => {
+        const authParams = {
+            username: "Admin",
+            password: "admin123",
+            loginUrl:
+                "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+            dashboardUrl:
+                "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+        };
 
-        await expect.soft(page).toHaveURL(/dashboard/); // Adjust based on actual landing page
-    });
+        const page = await getAuthenticatedPage(browser, authParams);
 
-    test("Login to OrangeHRM with Login Fixture", async ({ page }) => {
-        //await login(page);
-
-        await expect.soft(page).toHaveURL(/dashboard/); // Adjust based on actual landing page
+        // eslint-disable-next-line playwright/require-soft-assertions
+        await expect(page).toHaveURL(/dashboard/);
+        // eslint-disable-next-line playwright/require-soft-assertions
+        await expect(
+            page.getByRole("heading", { name: "Dashboard" }),
+        ).toBeVisible();
     });
 });

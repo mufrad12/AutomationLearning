@@ -1,13 +1,15 @@
-import { test } from "@playwright/test";
-import { login } from "../utilities/login";
+import { test, Page } from "@playwright/test";
+import { loginWithSession } from "../utilities/loginWithSession";
 import { createEmployee } from "../utilities/createEmployee";
 
 test.describe("Add Employee", () => {
-    test.beforeEach(async ({ page }) => {
-        await login(page);
+    let page: Page; // <-- Explicitly declare type
+
+    test.beforeEach(async ({ browser }) => {
+        page = await loginWithSession(browser);
     });
 
-    test("Should add employee and save ID", async ({ page }) => {
+    test("Should add employee and save ID", async () => {
         const empId = await createEmployee(page, "create_employee.json");
         console.log("✅ Created Employee ID:", empId);
     });
