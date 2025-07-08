@@ -24,7 +24,7 @@ export default defineConfig({
     expect: { timeout: 2 * 60 * 60 * 1000 }, // Set a global timeout of 2 hours for each assertion
 
     /* Opt out of parallel tests on CI. */
-    workers: process.env.CI ? 1 : undefined,
+    workers: process.env.CI ? 5 : undefined,
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
     reporter: [
         ["list"],
@@ -50,7 +50,10 @@ export default defineConfig({
     projects: [
         {
             name: "chromium",
-            use: { ...devices["Desktop Chrome"], headless: true },
+            use: {
+                ...devices["Desktop Chrome"],
+                headless: process.env.CI ? true : false,
+            },
             // Run tests in headless mode
         },
 
