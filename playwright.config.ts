@@ -1,5 +1,9 @@
 import { defineConfig, devices } from "@playwright/test";
 
+// Dynamically determine headless mode
+const isCI = !!process.env.CI;
+const isHeadless = isCI ? true : false;
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -52,7 +56,7 @@ export default defineConfig({
             name: "chromium",
             use: {
                 ...devices["Desktop Chrome"],
-                headless: process.env.CI ? true : false,
+                headless: isHeadless, // ✅ Headless dynamically controlled
             },
             // Run tests in headless mode
         },
