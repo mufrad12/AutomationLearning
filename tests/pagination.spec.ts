@@ -1,5 +1,5 @@
-import { test } from "@playwright/test";
-import { login } from "../utilities/login";
+import { test, Page } from "@playwright/test";
+import { loginWithSession } from "../utilities/loginWithSession";
 import { generateEmployeeCsvFile } from "../utilities/generateCsvData";
 import { clickElement } from "../utilities/playwright_utilities/click";
 import { uploadFile } from "../utilities/playwright_utilities/upload";
@@ -7,14 +7,13 @@ import { waitForElement } from "../utilities/playwright_utilities/waitForElement
 import { CsvImportPage } from "../page_objects/CsvImportPage";
 
 test.describe("Pagination via CSV Upload", () => {
-    // 🔑 Login before every test
-    test.beforeEach(async ({ page }) => {
-        await login(page);
+    let page: Page;
+
+    test.beforeEach(async ({ browser }) => {
+        page = await loginWithSession(browser);
     });
 
-    test("Upload CSV if no pagination arrow, then verify page 2", async ({
-        page,
-    }) => {
+    test("Upload CSV if no pagination arrow, then verify page 2", async () => {
         // Go to Employee List
         await clickElement(
             page.getByRole("link", { name: "PIM" }),
