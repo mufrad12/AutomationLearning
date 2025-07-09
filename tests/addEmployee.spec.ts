@@ -1,12 +1,13 @@
-import { test, Page } from "@playwright/test";
-import { loginWithSession } from "../utilities/loginWithSession";
+import { test } from "@playwright/test";
+import { getAuthenticatedState } from "../utilities/auth";
 import { createEmployee } from "../utilities/createEmployee";
+import { Page } from "@playwright/test";
+
+let page: Page;
 
 test.describe("Add Employee", () => {
-    let page: Page; // <-- Explicitly declare type
-
     test.beforeEach(async ({ browser }) => {
-        page = await loginWithSession(browser);
+        page = await getAuthenticatedState(browser);
     });
 
     test("Should add employee and save ID", async () => {

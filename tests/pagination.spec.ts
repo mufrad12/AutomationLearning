@@ -1,20 +1,20 @@
-import { test, Page } from "@playwright/test";
-import { loginWithSession } from "../utilities/loginWithSession";
+import { test } from "@playwright/test";
+import { getAuthenticatedState } from "../utilities/auth";
 import { generateEmployeeCsvFile } from "../utilities/generateCsvData";
 import { clickElement } from "../utilities/playwright_utilities/click";
 import { uploadFile } from "../utilities/playwright_utilities/upload";
 import { waitForElement } from "../utilities/playwright_utilities/waitForElement";
 import { CsvImportPage } from "../page_objects/CsvImportPage";
+import { Page } from "@playwright/test";
+
+let page: Page;
 
 test.describe("Pagination via CSV Upload", () => {
-    let page: Page;
-
     test.beforeEach(async ({ browser }) => {
-        page = await loginWithSession(browser);
+        page = await getAuthenticatedState(browser);
     });
 
     test("Upload CSV if no pagination arrow, then verify page 2", async () => {
-        // Go to Employee List
         await clickElement(
             page.getByRole("link", { name: "PIM" }),
             page,
@@ -55,10 +55,8 @@ test.describe("Pagination via CSV Upload", () => {
             await page.goto(
                 "https://opensource-demo.orangehrmlive.com/web/index.php/pim/pimCsvImport",
             );
-
             const csvImportPage = new CsvImportPage(page);
 
-            // Upload file using POM + locator
             await uploadFile(
                 csvImportPage.getFileInput(),
                 filePath,
@@ -78,7 +76,6 @@ test.describe("Pagination via CSV Upload", () => {
             );
             console.log("☑️ Upload confirmed.");
 
-            // Go back to Employee List and verify pagination
             await clickElement(
                 page.getByRole("link", { name: "Employee List" }),
                 page,

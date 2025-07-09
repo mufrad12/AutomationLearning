@@ -1,10 +1,10 @@
 {
     "name": "Test Report",
     "logo": null,
-    "date": 1752053893222,
-    "dateH": "7/9/2025, 3:38:13 PM",
-    "duration": 19997,
-    "durationH": "19.10s",
+    "date": 1752085020151,
+    "dateH": "7/10/2025, 12:17:00 AM",
+    "duration": 20388,
+    "durationH": "20.4s",
     "cwd": "F:/AGT/Automation/AutomationLearning",
     "outputFile": "F:\\AGT\\Automation\\AutomationLearning\\monocart-report\\index.html",
     "outputDir": "F:\\AGT\\Automation\\AutomationLearning\\monocart-report",
@@ -27,102 +27,111 @@
         "release": "10.0.26100",
         "type": "Windows_NT",
         "version": "Windows 11 Pro",
-        "uptime": 340175.109,
+        "uptime": 371302.031,
         "hostname": "Mufrad",
-        "pid": 31600,
+        "pid": 18952,
         "node": "22.14.0",
         "v8": "12.4.254.21-node.22",
-        "timestampStart": 1752053893222,
+        "timestampStart": 1752085020151,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 24.59
+                    "percent": 16.11
                 },
                 "mem": {
-                    "free": 2449620992
+                    "free": 2648051712
                 },
-                "timestamp": 1752053895232
+                "timestamp": 1752085022171
             },
             {
                 "cpu": {
-                    "percent": 25.86
+                    "percent": 20.78
                 },
                 "mem": {
-                    "free": 2308857856
+                    "free": 2545160192
                 },
-                "timestamp": 1752053897248
+                "timestamp": 1752085024181
             },
             {
                 "cpu": {
-                    "percent": 26.08
+                    "percent": 7.15
                 },
                 "mem": {
-                    "free": 2291728384
+                    "free": 2498052096
                 },
-                "timestamp": 1752053899256
+                "timestamp": 1752085026188
             },
             {
                 "cpu": {
-                    "percent": 33.24
+                    "percent": 22.35
                 },
                 "mem": {
-                    "free": 2261106688
+                    "free": 2440171520
                 },
-                "timestamp": 1752053901264
+                "timestamp": 1752085028196
             },
             {
                 "cpu": {
-                    "percent": 19.28
+                    "percent": 37.56
                 },
                 "mem": {
-                    "free": 2245742592
+                    "free": 2291793920
                 },
-                "timestamp": 1752053903272
+                "timestamp": 1752085030209
             },
             {
                 "cpu": {
-                    "percent": 24.59
+                    "percent": 28.15
                 },
                 "mem": {
-                    "free": 2236878848
+                    "free": 2231746560
                 },
-                "timestamp": 1752053905276
+                "timestamp": 1752085032220
             },
             {
                 "cpu": {
-                    "percent": 53.66
+                    "percent": 15.18
                 },
                 "mem": {
-                    "free": 2089848832
+                    "free": 2254110720
                 },
-                "timestamp": 1752053907299
+                "timestamp": 1752085034231
             },
             {
                 "cpu": {
-                    "percent": 26.9
+                    "percent": 21.99
                 },
                 "mem": {
-                    "free": 2085777408
+                    "free": 2176409600
                 },
-                "timestamp": 1752053909317
+                "timestamp": 1752085036240
             },
             {
                 "cpu": {
-                    "percent": 14.25
+                    "percent": 17.15
                 },
                 "mem": {
-                    "free": 2041663488
+                    "free": 2126581760
                 },
-                "timestamp": 1752053911331
+                "timestamp": 1752085038248
             },
             {
                 "cpu": {
-                    "percent": 20.74
+                    "percent": 22.73
                 },
                 "mem": {
-                    "free": 2460672000
+                    "free": 2549915648
                 },
-                "timestamp": 1752053913208
+                "timestamp": 1752085040258
+            },
+            {
+                "cpu": {
+                    "percent": 9.21
+                },
+                "mem": {
+                    "free": 2550030336
+                },
+                "timestamp": 1752085040535
             }
         ],
         "workers": 6,
@@ -131,8 +140,8 @@
                 "caseId": "ca64c6efdfeb8cbd4820",
                 "parallelIndex": 0,
                 "workerIndex": 0,
-                "timestamp": 1752053895454,
-                "duration": 16355
+                "timestamp": 1752085022239,
+                "duration": 16912
             }
         ],
         "cwd": "F:/AGT/Automation/AutomationLearning",
@@ -142,7 +151,7 @@
         "testDir": "tests",
         "outputFile": "monocart-report/index.html",
         "outputDir": "monocart-report",
-        "timestampEnd": 1752053913219
+        "timestampEnd": 1752085040539
     },
     "artifacts": [],
     "trends": [],
@@ -282,223 +291,363 @@
                                     "ok": true,
                                     "outcome": "expected",
                                     "expectedStatus": "passed",
-                                    "location": "tests/pagination.spec.ts:16:9",
+                                    "location": "tests/pagination.spec.ts:17:9",
                                     "logs": [
-                                        "⚠️ Session expired, logging in again...\n",
-                                        "✅ Navigated to Login Page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n",
+                                        "⏰ auth.json expired. Logging in again...\n",
+                                        "✅ Navigated to OrangeHRM Login Page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n",
                                         "✅ Filled Username Field with \"Admin\"\n",
                                         "✅ Filled Password Field with \"admin123\"\n",
                                         "✅ Clicked on Login Button\n",
-                                        "✅ New session saved to auth.json\n",
+                                        "✅ Login Complete\n",
+                                        "📂 Saved new auth.json\n",
                                         "✅ Clicked on PIM Menu\n",
                                         "✅ Clicked on Employee List Menu\n",
-                                        "✅ Right Arrow appeared on the page.\n",
-                                        "✅ Clicked on Right Arrow\n",
-                                        "✅ Page 2 Button appeared on the page.\n",
+                                        "\u001b[31m❌ Right Arrow did not appear within 2000 ms locator.waitFor: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.oxd-icon.bi-chevron-right') to be visible\u001b[22m\n\n    at waitForElement \u001b[90m(F:\\AGT\\Automation\\AutomationLearning\\\u001b[39mutilities\\playwright_utilities\\waitForElement.ts:20:23\u001b[90m)\u001b[39m\n    at \u001b[90mF:\\AGT\\Automation\\AutomationLearning\\\u001b[39mtests\\pagination.spec.ts:33:33 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    stepId: \u001b[32m'pw:api@16'\u001b[39m,\n    location: {\n      file: \u001b[32m'F:\\\\AGT\\\\Automation\\\\AutomationLearning\\\\utilities\\\\playwright_utilities\\\\waitForElement.ts'\u001b[39m,\n      line: \u001b[33m20\u001b[39m,\n      column: \u001b[33m23\u001b[39m,\n      function: \u001b[32m'waitForElement'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('.oxd-icon.bi-chevron-right')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m'.oxd-icon.bi-chevron-right'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m2000\u001b[39m\n    },\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@16'\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1752085034161\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 2000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('.oxd-icon.bi-chevron-right') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 2000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('.oxd-icon.bi-chevron-right') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at waitForElement (F:\\\\AGT\\\\Automation\\\\AutomationLearning\\\\utilities\\\\playwright_utilities\\\\waitForElement.ts:20:23)\\n'\u001b[39m +\n        \u001b[32m'    at F:\\\\AGT\\\\Automation\\\\AutomationLearning\\\\tests\\\\pagination.spec.ts:33:33'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n\u001b[39m",
+                                        "❌ Right arrow not found. Will upload CSV.\n",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "✅ CSV generated: F:\\AGT\\Automation\\AutomationLearning\\tests\\data\\EmployeeData.csv\n",
+                                        "✅ Uploaded file F:\\AGT\\Automation\\AutomationLearning\\tests\\data\\EmployeeData.csv to CSV File Input\n",
+                                        "📁 CSV file uploaded.\n",
+                                        "✅ Clicked on Upload Button\n",
+                                        "✅ Clicked on Confirmation OK Button\n",
+                                        "☑️ Upload confirmed.\n",
+                                        "✅ Clicked on Employee List Menu\n",
+                                        "✅ Page 2 Button after CSV upload appeared on the page.\n",
                                         "✅ Clicked on Page 2 Button\n",
-                                        "🎯 Page 2 opened.\n"
+                                        "✅ Page 2 found and opened after CSV import.\n"
                                     ],
                                     "timestamps": [
-                                        1752053895454,
-                                        1752053911809
+                                        1752085022239,
+                                        1752085039151
                                     ],
-                                    "duration": 16355,
+                                    "duration": 16912,
                                     "tags": [],
                                     "timeout": 10800000,
                                     "retry": 0,
                                     "status": "passed",
-                                    "stepNum": 23,
-                                    "stepFailed": 0,
+                                    "stepNum": 24,
+                                    "stepFailed": 1,
                                     "stepSubs": true,
                                     "subs": [
                                         {
-                                            "id": "2npz4i5o316hazg9ddqh",
+                                            "id": "ni53w8ucmqwnr8tsutb4",
                                             "title": "Before Hooks",
                                             "type": "step",
                                             "stepType": "hook",
-                                            "duration": 11305,
+                                            "duration": 6583,
                                             "location": "",
                                             "subs": [
                                                 {
-                                                    "id": "rar4n4cx5puxsypvpy4x",
+                                                    "id": "k87jodfx6axvxmncbvhd",
                                                     "title": "beforeEach hook",
                                                     "type": "step",
                                                     "stepType": "hook",
-                                                    "duration": 11303,
-                                                    "location": "tests/pagination.spec.ts:12:10",
+                                                    "duration": 6581,
+                                                    "location": "tests/pagination.spec.ts:13:10",
                                                     "subs": [
                                                         {
-                                                            "id": "u93w08jcd1p3o8oa3pfv",
+                                                            "id": "a8vu0x64q9e9oxrt31w5",
                                                             "title": "browser",
                                                             "type": "step",
                                                             "stepType": "fixture",
-                                                            "duration": 208,
+                                                            "duration": 191,
                                                             "location": "",
                                                             "subs": [
                                                                 {
-                                                                    "id": "hlx8b4u6tj3l0isosqr1",
+                                                                    "id": "qga8emso1wwxfq9o2ogd",
                                                                     "title": "Launch browser",
                                                                     "type": "step",
                                                                     "stepType": "pw:api",
-                                                                    "duration": 202,
+                                                                    "duration": 185,
                                                                     "location": ""
                                                                 }
                                                             ]
                                                         },
                                                         {
-                                                            "id": "l17bg4gn7u7sqzfl9a26",
+                                                            "id": "xlfgxrya6q6f49fc2zxd",
                                                             "title": "Create context",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 269,
-                                                            "location": "utilities/authManager.ts:20:25"
+                                                            "duration": 14,
+                                                            "location": "utilities/auth.ts:43:19"
                                                         },
                                                         {
-                                                            "id": "mbseqjcw7bx4pestkwje",
+                                                            "id": "iudpoavcv9a7alt5xvlb",
                                                             "title": "Create page",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 197,
-                                                            "location": "utilities/authManager.ts:21:36"
+                                                            "duration": 191,
+                                                            "location": "utilities/auth.ts:44:36"
                                                         },
                                                         {
-                                                            "id": "6hpmzdntxilqbn7eh40q",
-                                                            "title": "Navigate to \"/web/index.php/dashboard/index\"",
-                                                            "type": "step",
-                                                            "stepType": "pw:api",
-                                                            "duration": 4394,
-                                                            "location": "utilities/authManager.ts:22:20"
-                                                        },
-                                                        {
-                                                            "id": "6gr34aa8fmoxj2via747",
-                                                            "title": "Close context",
-                                                            "type": "step",
-                                                            "stepType": "pw:api",
-                                                            "duration": 26,
-                                                            "location": "utilities/authManager.ts:25:13"
-                                                        },
-                                                        {
-                                                            "id": "9ldj3f4r8k08fnjlr6t2",
-                                                            "title": "Create context",
-                                                            "type": "step",
-                                                            "stepType": "pw:api",
-                                                            "duration": 138,
-                                                            "location": "utilities/authManager.ts:35:21"
-                                                        },
-                                                        {
-                                                            "id": "xn3otfk98k5m8hbbendw",
-                                                            "title": "Create page",
-                                                            "type": "step",
-                                                            "stepType": "pw:api",
-                                                            "duration": 118,
-                                                            "location": "utilities/authManager.ts:36:32"
-                                                        },
-                                                        {
-                                                            "id": "ts1kpl0qh929ofsc5fxx",
+                                                            "id": "h07slug820mgsg7guuf2",
                                                             "title": "Navigate to \"/web/index.php/auth/login\"",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 3610,
+                                                            "duration": 3552,
                                                             "location": "utilities/playwright_utilities/goto.ts:20:20"
                                                         },
                                                         {
-                                                            "id": "b0cl5b1j9a10r54yq4xv",
+                                                            "id": "iios011k03d3m120m88u",
                                                             "title": "Fill \"Admin\" getByPlaceholder('Username')",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 446,
+                                                            "duration": 412,
                                                             "location": "utilities/playwright_utilities/fill.ts:20:23"
                                                         },
                                                         {
-                                                            "id": "6z2uog7fqfcqsitrtc7i",
+                                                            "id": "698b4zo57aqpqb8hgl4h",
                                                             "title": "Fill \"admin123\" getByPlaceholder('Password')",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 17,
+                                                            "duration": 35,
                                                             "location": "utilities/playwright_utilities/fill.ts:20:23"
                                                         },
                                                         {
-                                                            "id": "uvyfmqckz0z1j1s3uv3i",
+                                                            "id": "4el4cn79cmz4q3a2qxmr",
                                                             "title": "Click getByRole('button', { name: 'Login' })",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 1686,
+                                                            "duration": 1261,
                                                             "location": "utilities/playwright_utilities/click.ts:20:23"
                                                         },
                                                         {
-                                                            "id": "plckn2u4le5uno1re7sp",
+                                                            "id": "kdyhl2oaauu0tewk8gic",
                                                             "title": "Get storage state",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 21,
-                                                            "location": "utilities/authManager.ts:42:35"
+                                                            "duration": 104,
+                                                            "location": "utilities/auth.ts:49:44"
+                                                        },
+                                                        {
+                                                            "id": "7poccl4k1jxrhkspm4ws",
+                                                            "title": "Create page",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 46,
+                                                            "location": "utilities/auth.ts:59:32"
+                                                        },
+                                                        {
+                                                            "id": "neivt3007l0jdu5dsdul",
+                                                            "title": "Navigate to \"/web/index.php/dashboard/index\"",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 737,
+                                                            "location": "utilities/auth.ts:60:16"
                                                         }
                                                     ]
                                                 }
                                             ]
                                         },
                                         {
-                                            "id": "xhvrsgld2pmyqkfhklth",
+                                            "id": "jr5888fisod40deoipia",
                                             "title": "Click getByRole('link', { name: 'PIM' })",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 1780,
+                                            "duration": 1910,
                                             "location": "utilities/playwright_utilities/click.ts:20:23"
                                         },
                                         {
-                                            "id": "klpcinwl3t0m2zvq2qwz",
+                                            "id": "icnrg2kcjup1em1qnkgz",
                                             "title": "Click getByRole('link', { name: 'Employee List' })",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 1277,
+                                            "duration": 1385,
                                             "location": "utilities/playwright_utilities/click.ts:20:23"
                                         },
                                         {
-                                            "id": "u30rp50kp7j20k3sh7uo",
+                                            "id": "jwxw4xs829owcnwib7le",
                                             "title": "Wait for selector locator('.oxd-icon.bi-chevron-right')",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 1386,
-                                            "location": "utilities/playwright_utilities/waitForElement.ts:20:23"
+                                            "duration": 2040,
+                                            "location": "utilities/playwright_utilities/waitForElement.ts:20:23",
+                                            "errors": [
+                                                "TimeoutError: locator.waitFor: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.oxd-icon.bi-chevron-right') to be visible\u001b[22m\n\n\n\u001b[0m \u001b[90m 18 |\u001b[39m )\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 19 |\u001b[39m     \u001b[36mtry\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\n    at waitForElement (F:\\AGT\\Automation\\AutomationLearning\\utilities\\playwright_utilities\\waitForElement.ts:20:23)\n    at F:\\AGT\\Automation\\AutomationLearning\\tests\\pagination.spec.ts:33:33"
+                                            ],
+                                            "errorNum": 1
                                         },
                                         {
-                                            "id": "q81szvnyqbkmpd1pxyvi",
-                                            "title": "Is visible locator('.oxd-icon.bi-chevron-right')",
+                                            "id": "rgtisirbxz9ritnmenkc",
+                                            "title": "Navigate to \"/web/index.php/pim/pimCsvImport\"",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 20,
-                                            "location": "tests/pagination.spec.ts:35:34"
+                                            "duration": 486,
+                                            "location": "tests/pagination.spec.ts:55:24"
                                         },
                                         {
-                                            "id": "va2qufjsmwg74iqs0z2u",
-                                            "title": "Click locator('.oxd-icon.bi-chevron-right')",
+                                            "id": "7yrjyq0ejckmxlfrq9tc",
+                                            "title": "Set input files locator('input[type=\"file\"]')",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 51,
+                                            "duration": 365,
+                                            "location": "utilities/playwright_utilities/upload.ts:20:9"
+                                        },
+                                        {
+                                            "id": "bu6yvthwyad1jjhud7sh",
+                                            "title": "Click getByRole('button', { name: 'Upload' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 33,
                                             "location": "utilities/playwright_utilities/click.ts:20:23"
                                         },
                                         {
-                                            "id": "tyedhipetzykf6vlbcrw",
+                                            "id": "1ljy9w47g5pa4vxc51h2",
+                                            "title": "Click getByRole('button', { name: 'Ok' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 1365,
+                                            "location": "utilities/playwright_utilities/click.ts:20:23"
+                                        },
+                                        {
+                                            "id": "1gc74rx41f28z85wht7v",
+                                            "title": "Click getByRole('link', { name: 'Employee List' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 568,
+                                            "location": "utilities/playwright_utilities/click.ts:20:23"
+                                        },
+                                        {
+                                            "id": "672zz0v03x62bliztqzm",
                                             "title": "Wait for selector getByRole('button', { name: '2' })",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 13,
+                                            "duration": 1398,
                                             "location": "utilities/playwright_utilities/waitForElement.ts:20:23"
                                         },
                                         {
-                                            "id": "iv8wmuopy6vcatxt7qsv",
+                                            "id": "vipzs969nqxr5grdx8rb",
                                             "title": "Click getByRole('button', { name: '2' })",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 36,
+                                            "duration": 55,
                                             "location": "utilities/playwright_utilities/click.ts:20:23"
                                         },
                                         {
-                                            "id": "c0ljwoymc5iidrb7ele5",
+                                            "id": "wgzusfemea7pul0x2gx0",
                                             "title": "After Hooks",
                                             "type": "step",
                                             "stepType": "hook",
-                                            "duration": 230,
+                                            "duration": 376,
                                             "location": ""
                                         }
                                     ],
@@ -512,7 +661,7 @@
                                     ]
                                 }
                             ],
-                            "location": "tests/pagination.spec.ts:9:6"
+                            "location": "tests/pagination.spec.ts:12:6"
                         }
                     ],
                     "location": "tests/pagination.spec.ts:0:0"
@@ -578,7 +727,7 @@
         },
         "steps": {
             "name": "Steps",
-            "value": 23,
+            "value": 24,
             "id": "steps"
         },
         "suites": {
@@ -613,7 +762,7 @@
         "errors": {
             "name": "Errors",
             "icon": "error",
-            "value": 0,
+            "value": 1,
             "id": "errors"
         },
         "retries": {
@@ -625,7 +774,7 @@
         "logs": {
             "name": "Logs",
             "icon": "log",
-            "value": 13,
+            "value": 141,
             "id": "logs"
         },
         "attachments": {
