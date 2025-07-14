@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-import { getAuthenticatedState } from "../utilities/auth";
+import { getAuthenticatedState } from "../utilities/fixtures/auth";
 import { createEmployee } from "../utilities/createEmployee";
 import { Page } from "@playwright/test";
 

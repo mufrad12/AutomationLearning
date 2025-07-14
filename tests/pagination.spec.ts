@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-import { getAuthenticatedState } from "../utilities/auth";
+import { getAuthenticatedState } from "../utilities/fixtures/auth";
 import { generateEmployeeCsvFile } from "../utilities/generateCsvData";
 import { clickElement } from "../utilities/playwright_utilities/click";
 import { uploadFile } from "../utilities/playwright_utilities/upload";

@@ -2,7 +2,7 @@ import { Browser, Page } from "@playwright/test";
 import fs from "fs";
 import path from "path";
 
-import { login } from "./login";
+import { login } from "../login";
 
 const authFilePath = path.resolve(process.cwd(), "tests", "data", "auth.json");
 const EXPIRY_DURATION_MS = 10 * 60 * 1000; // 10 minutes

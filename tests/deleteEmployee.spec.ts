@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 import path from "path";
-import { getAuthenticatedState } from "../utilities/auth";
+import { getAuthenticatedState } from "../utilities/fixtures/auth";
 import { createEmployee } from "../utilities/createEmployee";
 import { searchEmployeeByIdAndDelete } from "../utilities/searchEmployeeActions";
 import {
