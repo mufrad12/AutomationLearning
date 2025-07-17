@@ -10,14 +10,17 @@ export class LoginPage extends BasePage {
     }
 
     getUsernameField(): Locator {
-        return this.page.getByPlaceholder("Username");
+        // eslint-disable-next-line quotes
+        return this.page.locator('input[name="username"]');
     }
 
     getPasswordField(): Locator {
-        return this.page.getByPlaceholder("Password");
+        // eslint-disable-next-line quotes
+        return this.page.locator('input[name="password"]');
     }
 
     getLoginButton(): Locator {
-        return this.page.getByRole("button", { name: "Login" });
+        // eslint-disable-next-line quotes
+        return this.page.locator('button[type="submit"]');
     }
 }

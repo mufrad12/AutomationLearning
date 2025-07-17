@@ -23,12 +23,18 @@ export default defineConfig({
     /* Retry on CI only */
     retries: process.env.CI ? 2 : 0,
 
-    timeout: 3 * 60 * 60 * 1000, // Set a global timeout of 2 hours for each test
-    expect: { timeout: 2 * 60 * 60 * 1000 }, // Set a global timeout of 2 hours for each assertion
+    globalSetup: require.resolve("./utilities/setup/global-setup"),
+    globalTeardown: require.resolve("./utilities/setup/global-teardown"),
 
+    timeout: 3 * 60 * 60 * 1000, // Set a global timeout of 2 hours for each test
+    //timeout: 6 * 1000,
+    expect: { timeout: 2 * 60 * 60 * 1000 }, // Set a global timeout of 2 hours for each assertion
+    //expect: { timeout: 6 * 1000 },
     /* Opt out of parallel tests on CI. */
     workers: process.env.CI ? 5 : undefined,
-    /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+    /* Reporter to use. See https://playwright.dev/docs/
+    test-reporters */
+
     reporter: [
         ["list"],
         [

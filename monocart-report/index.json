@@ -1,15 +1,15 @@
 {
     "name": "Test Report",
     "logo": null,
-    "date": 1752523910598,
-    "dateH": "7/15/2025, 2:11:50 AM",
-    "duration": 11094,
-    "durationH": "11.1s",
+    "date": 1752785381206,
+    "dateH": "7/18/2025, 2:49:41 AM",
+    "duration": 18277,
+    "durationH": "18.3s",
     "cwd": "F:/AGT/Automation/AutomationLearning",
     "outputFile": "F:\\AGT\\Automation\\AutomationLearning\\monocart-report\\index.html",
     "outputDir": "F:\\AGT\\Automation\\AutomationLearning\\monocart-report",
     "metadata": {
-        "actualWorkers": 2
+        "actualWorkers": 1
     },
     "system": {
         "cpu": {
@@ -27,83 +27,112 @@
         "release": "10.0.26100",
         "type": "Windows_NT",
         "version": "Windows 11 Pro",
-        "uptime": 106549.359,
+        "uptime": 256926.546,
         "hostname": "Mufrad",
-        "pid": 9092,
+        "pid": 7936,
         "node": "22.14.0",
         "v8": "12.4.254.21-node.22",
-        "timestampStart": 1752523910598,
+        "timestampStart": 1752785381206,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 34.05
+                    "percent": 22.26
                 },
                 "mem": {
-                    "free": 1530757120
+                    "free": 4565807104
                 },
-                "timestamp": 1752523912615
+                "timestamp": 1752785383223
             },
             {
                 "cpu": {
-                    "percent": 25.57
+                    "percent": 32.42
                 },
                 "mem": {
-                    "free": 1280192512
+                    "free": 4375134208
                 },
-                "timestamp": 1752523914634
+                "timestamp": 1752785385247
             },
             {
                 "cpu": {
-                    "percent": 26.58
+                    "percent": 24.25
                 },
                 "mem": {
-                    "free": 1197887488
+                    "free": 4344127488
                 },
-                "timestamp": 1752523916648
+                "timestamp": 1752785387261
             },
             {
                 "cpu": {
-                    "percent": 34.55
+                    "percent": 40.97
                 },
                 "mem": {
-                    "free": 1139052544
+                    "free": 4210520064
                 },
-                "timestamp": 1752523918669
+                "timestamp": 1752785389280
             },
             {
                 "cpu": {
-                    "percent": 47.9
+                    "percent": 44.45
                 },
                 "mem": {
-                    "free": 1547870208
+                    "free": 4179648512
                 },
-                "timestamp": 1752523920682
+                "timestamp": 1752785391301
             },
             {
                 "cpu": {
-                    "percent": 14.54
+                    "percent": 16.9
                 },
                 "mem": {
-                    "free": 1560002560
+                    "free": 4108009472
                 },
-                "timestamp": 1752523921682
+                "timestamp": 1752785393310
+            },
+            {
+                "cpu": {
+                    "percent": 24.53
+                },
+                "mem": {
+                    "free": 4115337216
+                },
+                "timestamp": 1752785395314
+            },
+            {
+                "cpu": {
+                    "percent": 36.67
+                },
+                "mem": {
+                    "free": 4044390400
+                },
+                "timestamp": 1752785397327
+            },
+            {
+                "cpu": {
+                    "percent": 39.02
+                },
+                "mem": {
+                    "free": 4369514496
+                },
+                "timestamp": 1752785399338
+            },
+            {
+                "cpu": {
+                    "percent": 33.96
+                },
+                "mem": {
+                    "free": 4376768512
+                },
+                "timestamp": 1752785399479
             }
         ],
         "workers": 6,
         "jobs": [
             {
-                "caseId": "b81bf37d094e9de74add",
+                "caseId": "4db08cfb2823f469f039",
                 "parallelIndex": 0,
                 "workerIndex": 0,
-                "timestamp": 1752523912648,
-                "duration": 6634
-            },
-            {
-                "caseId": "1990fbd797e1ddf0fe04",
-                "parallelIndex": 1,
-                "workerIndex": 1,
-                "timestamp": 1752523912647,
-                "duration": 7752
+                "timestamp": 1752785383346,
+                "duration": 14709
             }
         ],
         "cwd": "F:/AGT/Automation/AutomationLearning",
@@ -113,7 +142,7 @@
         "testDir": "tests",
         "outputFile": "monocart-report/index.html",
         "outputDir": "monocart-report",
-        "timestampEnd": 1752523921692
+        "timestampEnd": 1752785399483
     },
     "artifacts": [],
     "trends": [],
@@ -229,345 +258,259 @@
             "title": "chromium",
             "type": "suite",
             "suiteType": "project",
-            "caseNum": 2,
+            "caseNum": 1,
             "subs": [
                 {
-                    "id": "d90e2d084e7b20152ba6",
-                    "title": "login.spec.ts",
+                    "id": "5189373b53535d8a9c58",
+                    "title": "addEmployee.spec.ts",
                     "type": "suite",
                     "suiteType": "file",
-                    "caseNum": 2,
+                    "caseNum": 1,
                     "subs": [
                         {
-                            "id": "adcb61d13af3043857c4",
-                            "title": "Login Test with Fixture",
+                            "id": "02796f52e72c5a2fbe17",
+                            "title": "Add Employee",
                             "type": "suite",
                             "suiteType": "describe",
-                            "caseNum": 2,
+                            "caseNum": 1,
                             "subs": [
                                 {
-                                    "id": "b81bf37d094e9de74add",
-                                    "title": "Login using Auth Fixture",
+                                    "id": "4db08cfb2823f469f039",
+                                    "title": "Should add employee and save ID",
                                     "type": "case",
                                     "caseType": "passed",
                                     "ok": true,
                                     "outcome": "expected",
                                     "expectedStatus": "passed",
-                                    "location": "tests/login.spec.ts:6:9",
+                                    "location": "tests/addEmployee.spec.ts:13:9",
                                     "logs": [
-                                        "✅ Navigated to OrangeHRM Login Page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n",
-                                        "✅ Filled Username Field with \"Admin\"\n",
-                                        "✅ Filled Password Field with \"admin123\"\n",
-                                        "✅ Clicked on Login Button\n",
-                                        "✅ Login Complete\n"
+                                        "✅ Using cached auth.json\n",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "\u001b[31m[@faker-js/faker]: faker.name is deprecated since v8.0 and will be removed in v10.0. Please use faker.person instead.\n\u001b[39m",
+                                        "🔢 Unique Employee ID: 444457483\n",
+                                        "✅ Clicked on PIM Menu\n",
+                                        "✅ Clicked on Add Employee Button\n",
+                                        "✅ Filled First Name Field with \"Anabel\"\n",
+                                        "✅ Filled Last Name Field with \"Herzog\"\n",
+                                        "✅ Filled Employee ID Field with \"444457483\"\n",
+                                        "✅ Got value \"444457483\" from Employee ID Field\n",
+                                        "✅ Clicked on Save Button\n",
+                                        "✅ Contact Details Section is visible.\n",
+                                        "✅ Employee Full Name Section is visible.\n",
+                                        "👤 Created: Anabel Herzog | ID: 444457483\n",
+                                        "✅ Created Employee ID: 444457483\n"
                                     ],
                                     "timestamps": [
-                                        1752523912648,
-                                        1752523919282
+                                        1752785383346,
+                                        1752785398055
                                     ],
-                                    "duration": 6634,
+                                    "duration": 14709,
                                     "tags": [],
                                     "timeout": 10800000,
                                     "retry": 0,
                                     "status": "passed",
-                                    "stepNum": 14,
+                                    "stepNum": 23,
                                     "stepFailed": 0,
                                     "stepSubs": true,
                                     "subs": [
                                         {
-                                            "id": "vnnemkegusal2sc97z1e",
+                                            "id": "kye5g2i92z3mmgcdtylp",
                                             "title": "Before Hooks",
                                             "type": "step",
                                             "stepType": "hook",
-                                            "duration": 619,
+                                            "duration": 4021,
                                             "location": "",
                                             "subs": [
                                                 {
-                                                    "id": "zbiyi360wu752tmdlb94",
-                                                    "title": "browser",
+                                                    "id": "yzdx2yjixvzb1kd18otk",
+                                                    "title": "beforeEach hook",
                                                     "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 221,
-                                                    "location": "",
+                                                    "stepType": "hook",
+                                                    "duration": 4020,
+                                                    "location": "tests/addEmployee.spec.ts:9:10",
                                                     "subs": [
                                                         {
-                                                            "id": "xou7nmdxvck5rahw6scr",
-                                                            "title": "Launch browser",
+                                                            "id": "ztz5pek9bbcnmaj1u9yf",
+                                                            "title": "browser",
                                                             "type": "step",
-                                                            "stepType": "pw:api",
-                                                            "duration": 216,
-                                                            "location": ""
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "neib6fiki0bm9gba00ra",
-                                                    "title": "context",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 36,
-                                                    "location": "",
-                                                    "subs": [
+                                                            "stepType": "fixture",
+                                                            "duration": 225,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "m6m7epuxsclbrgq74hot",
+                                                                    "title": "Launch browser",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 220,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
                                                         {
-                                                            "id": "dtifqj6ufom605vkb3fr",
+                                                            "id": "s0v11dm82oyngkj12cdz",
                                                             "title": "Create context",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 21,
-                                                            "location": ""
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "8cse2q1ge827xaz5ju45",
-                                                    "title": "page",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 354,
-                                                    "location": "",
-                                                    "subs": [
+                                                            "duration": 277,
+                                                            "location": "utilities/fixtures/auth.ts:39:19"
+                                                        },
                                                         {
-                                                            "id": "gisz9c9jp7dv1ane6ubt",
+                                                            "id": "1x48l61o5rxyjpyhswrg",
                                                             "title": "Create page",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 350,
-                                                            "location": ""
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "ak3f2dqpkv4vvn52ypx9",
-                                            "title": "Navigate to \"/web/index.php/auth/login\"",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 3810,
-                                            "location": "utilities/playwright_utilities/goto.ts:20:20"
-                                        },
-                                        {
-                                            "id": "oz28ia5ev6n1z539psir",
-                                            "title": "Fill \"Admin\" getByPlaceholder('Username')",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 411,
-                                            "location": "utilities/playwright_utilities/fill.ts:20:23"
-                                        },
-                                        {
-                                            "id": "ass7po6zlzudrrav8mhp",
-                                            "title": "Fill \"admin123\" getByPlaceholder('Password')",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 17,
-                                            "location": "utilities/playwright_utilities/fill.ts:20:23"
-                                        },
-                                        {
-                                            "id": "zdfp6faudy2794f1plv4",
-                                            "title": "Click getByRole('button', { name: 'Login' })",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 1420,
-                                            "location": "utilities/playwright_utilities/click.ts:20:23"
-                                        },
-                                        {
-                                            "id": "5as1ownhvp5fnz1gkofp",
-                                            "title": "After Hooks",
-                                            "type": "step",
-                                            "stepType": "hook",
-                                            "duration": 175,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "5el7od4kglcmg3brlbmh",
-                                                    "title": "page",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 0,
-                                                    "location": ""
-                                                },
-                                                {
-                                                    "id": "o0kxx3xn4r9m2po0qsmz",
-                                                    "title": "context",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 0,
-                                                    "location": ""
-                                                }
-                                            ]
-                                        }
-                                    ],
-                                    "attachments": [
-                                        {
-                                            "name": "trace",
-                                            "path": "attachments/2f31c0d00d5ab7bc70ce13ce9a402741c57c5c7a.zip",
-                                            "contentType": "application/zip",
-                                            "retry": 0
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "1990fbd797e1ddf0fe04",
-                                    "title": "Login to OrangeHRM with Login Fixture",
-                                    "type": "case",
-                                    "caseType": "passed",
-                                    "ok": true,
-                                    "outcome": "expected",
-                                    "expectedStatus": "passed",
-                                    "location": "tests/login.spec.ts:10:9",
-                                    "logs": [
-                                        "⏰ auth.json expired. Logging in again...\n",
-                                        "✅ Navigated to OrangeHRM Login Page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n",
-                                        "✅ Filled Username Field with \"Admin\"\n",
-                                        "✅ Filled Password Field with \"admin123\"\n",
-                                        "✅ Clicked on Login Button\n",
-                                        "✅ Login Complete\n",
-                                        "📂 Saved new auth.json\n"
-                                    ],
-                                    "timestamps": [
-                                        1752523912647,
-                                        1752523920399
-                                    ],
-                                    "duration": 7752,
-                                    "tags": [],
-                                    "timeout": 10800000,
-                                    "retry": 0,
-                                    "status": "passed",
-                                    "stepNum": 14,
-                                    "stepFailed": 0,
-                                    "stepSubs": true,
-                                    "subs": [
-                                        {
-                                            "id": "uqkqje7j5f4vwfu7lm0i",
-                                            "title": "Before Hooks",
-                                            "type": "step",
-                                            "stepType": "hook",
-                                            "duration": 234,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "p5zcsjfnhbjtix8g0h62",
-                                                    "title": "browser",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 229,
-                                                    "location": "",
-                                                    "subs": [
+                                                            "duration": 161,
+                                                            "location": "utilities/fixtures/auth.ts:59:32"
+                                                        },
                                                         {
-                                                            "id": "0te3en6gcmover49fr6m",
-                                                            "title": "Launch browser",
+                                                            "id": "fzfcuahkuy3d9sf4hstf",
+                                                            "title": "Navigate to \"/web/index.php/dashboard/index\"",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 224,
-                                                            "location": ""
+                                                            "duration": 3323,
+                                                            "location": "utilities/fixtures/auth.ts:60:16"
                                                         }
                                                     ]
                                                 }
                                             ]
                                         },
                                         {
-                                            "id": "d4dg4o54sbq6zul9j49s",
-                                            "title": "Create context",
+                                            "id": "xn7oii6idh2ccwsbafu1",
+                                            "title": "Click getByRole('link', { name: 'PIM' })",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 19,
-                                            "location": "utilities/fixtures/auth.ts:43:19"
-                                        },
-                                        {
-                                            "id": "c9ch1zt4dk4h4aeev7jr",
-                                            "title": "Create page",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 399,
-                                            "location": "utilities/fixtures/auth.ts:44:36"
-                                        },
-                                        {
-                                            "id": "j6hvt6pvbwh9c8xbe9q8",
-                                            "title": "Navigate to \"/web/index.php/auth/login\"",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 4050,
-                                            "location": "utilities/playwright_utilities/goto.ts:20:20"
-                                        },
-                                        {
-                                            "id": "f4freoq0gzyd2n0yxdqu",
-                                            "title": "Fill \"Admin\" getByPlaceholder('Username')",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 414,
-                                            "location": "utilities/playwright_utilities/fill.ts:20:23"
-                                        },
-                                        {
-                                            "id": "m8g3tv5fv9i2ce83u6yq",
-                                            "title": "Fill \"admin123\" getByPlaceholder('Password')",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 20,
-                                            "location": "utilities/playwright_utilities/fill.ts:20:23"
-                                        },
-                                        {
-                                            "id": "0jkyi6wqc8q1mhnr0b2j",
-                                            "title": "Click getByRole('button', { name: 'Login' })",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 1410,
+                                            "duration": 1684,
                                             "location": "utilities/playwright_utilities/click.ts:20:23"
                                         },
                                         {
-                                            "id": "brrx7pi46hvta6c4nndn",
-                                            "title": "Get storage state",
+                                            "id": "xg2x8leqbipfwc95w2l1",
+                                            "title": "Click getByRole('button', { name: ' Add' })",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 13,
-                                            "location": "utilities/fixtures/auth.ts:49:44"
+                                            "duration": 1117,
+                                            "location": "utilities/playwright_utilities/click.ts:20:23"
                                         },
                                         {
-                                            "id": "rhjdhvhfnl48b7y93vpu",
-                                            "title": "Create page",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 66,
-                                            "location": "utilities/fixtures/auth.ts:59:32"
-                                        },
-                                        {
-                                            "id": "ii19sn69y1lpvwalkloj",
-                                            "title": "Navigate to \"/web/index.php/dashboard/index\"",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 737,
-                                            "location": "utilities/fixtures/auth.ts:60:16"
-                                        },
-                                        {
-                                            "id": "rq7bpbrm8lga9yvij6ca",
-                                            "title": "soft toHaveURL",
+                                            "id": "i0nfu59uzok0qw1gfex0",
+                                            "title": "toBeVisible",
                                             "type": "step",
                                             "stepType": "expect",
-                                            "duration": 48,
-                                            "location": "tests/login.spec.ts:14:33"
+                                            "duration": 913,
+                                            "location": "utilities/playwright_utilities/fill.ts:19:31"
                                         },
                                         {
-                                            "id": "oibs6w293zim1qqx887u",
+                                            "id": "1qdpc6lvh4kaipmg54rn",
+                                            "title": "toBeEnabled",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 12,
+                                            "location": "utilities/playwright_utilities/fill.ts:21:31"
+                                        },
+                                        {
+                                            "id": "gh9n1cmsglbfi1zo15p0",
+                                            "title": "Fill \"Anabel\" getByPlaceholder('First Name')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 25,
+                                            "location": "utilities/playwright_utilities/fill.ts:24:23"
+                                        },
+                                        {
+                                            "id": "9aifuygan0gwenjymmj5",
+                                            "title": "toBeVisible",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 13,
+                                            "location": "utilities/playwright_utilities/fill.ts:19:31"
+                                        },
+                                        {
+                                            "id": "igx0rkpee2n7lcfdsjo4",
+                                            "title": "toBeEnabled",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 12,
+                                            "location": "utilities/playwright_utilities/fill.ts:21:31"
+                                        },
+                                        {
+                                            "id": "pabx1uulduo23ihds1hn",
+                                            "title": "Fill \"Herzog\" getByPlaceholder('Last Name')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 32,
+                                            "location": "utilities/playwright_utilities/fill.ts:24:23"
+                                        },
+                                        {
+                                            "id": "cn70vgjbhqqp5lk4q6z9",
+                                            "title": "toBeVisible",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 882,
+                                            "location": "utilities/playwright_utilities/fill.ts:19:31"
+                                        },
+                                        {
+                                            "id": "igdgxkxgjjxh9e150uys",
+                                            "title": "toBeEnabled",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 9,
+                                            "location": "utilities/playwright_utilities/fill.ts:21:31"
+                                        },
+                                        {
+                                            "id": "gzi4jypfegrda8p4y6lj",
+                                            "title": "Fill \"444457483\" locator('xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 29,
+                                            "location": "utilities/playwright_utilities/fill.ts:24:23"
+                                        },
+                                        {
+                                            "id": "mllwlne84772k6bpzm1w",
+                                            "title": "Get input value locator('xpath=/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input')",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 15,
+                                            "location": "utilities/playwright_utilities/getInputValue.ts:18:37"
+                                        },
+                                        {
+                                            "id": "vl0q7jne5xdvaav1mq9z",
+                                            "title": "Click getByRole('button', { name: 'Save' })",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 52,
+                                            "location": "utilities/playwright_utilities/click.ts:20:23"
+                                        },
+                                        {
+                                            "id": "pd1fw6wbuyafvql8bjdu",
+                                            "title": "toBeVisible",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 5173,
+                                            "location": "utilities/playwright_utilities/assert.ts:20:31",
+                                            "count": 2
+                                        },
+                                        {
+                                            "id": "3q2nk0stc3ykdpm9posg",
                                             "title": "After Hooks",
                                             "type": "step",
                                             "stepType": "hook",
-                                            "duration": 158,
+                                            "duration": 353,
                                             "location": ""
                                         }
                                     ],
                                     "attachments": [
                                         {
                                             "name": "trace",
-                                            "path": "attachments/96944388ed5aca36ca2e1296fb8f263e05f3b2cc.zip",
+                                            "path": "attachments/077cc88909387c82e3b734fdff841accf03d2192.zip",
                                             "contentType": "application/zip",
                                             "retry": 0
                                         }
                                     ]
                                 }
                             ],
-                            "location": "tests/login.spec.ts:5:6"
+                            "location": "tests/addEmployee.spec.ts:8:6"
                         }
                     ],
-                    "location": "tests/login.spec.ts:0:0"
+                    "location": "tests/addEmployee.spec.ts:0:0"
                 }
             ]
         }
@@ -592,7 +535,7 @@
     "summary": {
         "tests": {
             "name": "Tests",
-            "value": 2,
+            "value": 1,
             "nav": true,
             "id": "tests"
         },
@@ -622,7 +565,7 @@
         },
         "passed": {
             "name": "Passed",
-            "value": 2,
+            "value": 1,
             "color": "green",
             "nav": true,
             "id": "passed",
@@ -630,7 +573,7 @@
         },
         "steps": {
             "name": "Steps",
-            "value": 28,
+            "value": 22,
             "id": "steps"
         },
         "suites": {
@@ -677,13 +620,13 @@
         "logs": {
             "name": "Logs",
             "icon": "log",
-            "value": 12,
+            "value": 15,
             "id": "logs"
         },
         "attachments": {
             "name": "Attachments",
             "icon": "attachment",
-            "value": 2,
+            "value": 1,
             "id": "attachments"
         },
         "artifacts": {
@@ -696,7 +639,7 @@
         "width": 360,
         "height": 150,
         "margin": 10,
-        "svg": "<svg viewBox=\"0 0 360 150\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-failed\"><path d=\"\" fill=\"#d00\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-passed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"green\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 15)\"><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"#d00\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 30)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"orange\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 60)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"gray\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 90)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"green\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">2</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g></g></svg>"
+        "svg": "<svg viewBox=\"0 0 360 150\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-failed\"><path d=\"\" fill=\"#d00\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-passed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"green\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 15)\"><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"#d00\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 30)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"orange\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 60)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"gray\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 90)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"green\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g></g></svg>"
     },
     "htmlPath": "monocart-report/index.html"
 }
